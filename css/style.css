@@ -8,29 +8,99 @@ html{
 	min-height: 100%;
 } 
 body{
-	background-color: rgb(60,60,60);
-	color: rgb(255,255,255);
+	background-color: rgb(0,41,60);
+	color: rgb(25,187,213);
 }
 h1{
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-weight: normal;
-	font-size: 36pt;
+	font-size: 45pt;
+}
+h2{
+	font-size: 25pt;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	color: rgb(0,75,110);
+}
+h3{
+	color: rgb(30,215,190);
+	font-family: 'Raleway', sans-serif;
+	font-weight: bolder;
+	font-size: 28pt;
 }
 b{
-	color: orange;
+	color: rgb(30,215,190);
 	font-weight: bolder;
-	font-size: 44pt;
-}
-.words{
-	width: 50%;
-	margin: auto;
+	font-size: 53pt;
 }
 p{
-	text-align: center;
 	font-family: 'Raleway', sans-serif;
-	font-size: 25pt;
+	font-size: 20pt;
+}
+table{
+	text-align: center;
+}
+ul{
+	font-family: 'Raleway', sans-serif;
+}
+td{
+	padding: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20pt;
+}
+#wrapper{
+	width: 100%;
+}
+#pageTitle{
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+#roleUL{
+	font-size: 12pt;
+}
+#goalsUL{
+	font-size: 22pt;
+}
+.words{
+	width: 75%;
+	margin: auto;
+}
+.subHeading{
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+	background-color: white;
+	box-shadow: 0 5px 20px black;
+}
+.blockContainer{
+	display: inline-block;
+	width: 100%;
+	padding-bottom: 25px;
+}
+.sideBlock{
+	display: inline-block;
+	float: left;
+	width: 33%;
+	margin-left: 8.5%;
+	margin-right: 8.5%;
+
 }
 .contentBlock{
-	width: 100%;
+	margin: auto;
+	margin-bottom: 25px;
+	width: 75%;
+}
+.teamPic{
+	width: 150px;
+	height: 150px;
+	box-shadow: 0 5px 15px black;
+}
+#interviewChart{
+	display: block;
+	margin: auto;
+	width: 600px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	box-shadow: 0 5px 15px black;
 }

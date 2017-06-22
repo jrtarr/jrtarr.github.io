@@ -1,0 +1,9 @@
+<div class="projWrapper">
+	<div class="projText">
+		<h3 class="projTitle">{{proj.name}}</h3>
+		<p class=projDate>{{proj.startDate | date : mediumDate}} - {{proj.endDate}}</p>
+		<p class="projSkills">Skills Used: {{proj.skillsUsed}}</p>
+		<p class="projDesc">{{proj.description}}</p>	
+	</div>
+	<img class="projPic" ng-src="{{proj.img}}" alt="{{proj.name}} Picture"/>	
+</div>

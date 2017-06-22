@@ -1,7 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Dosis', sans-serif;
 }
 
 html{
@@ -9,279 +9,50 @@ html{
 	min-height: 100%;
 } 
 body{
-	background-color: rgb(0,41,60);
-	color: rgb(25,187,213);
-}
-h1{
-	text-align: center;
-	font-weight: normal;
-	font-size: 45pt;
+	background-color: white;
 }
 h2{
-	font-size: 25pt;
-	text-align: center;
-	color: rgb(0,75,110);
-}
-h3{
-	color: rgb(30,215,190);
-	font-weight: bolder;
-	font-size: 28pt;
-}
-b{
-	color: rgb(30,215,190);
-	font-weight: bolder;
-	font-size: 53pt;
-}
-p{
-	font-size: 18pt;
-}
-i{
-	color: rgb(30,215,190);
-	font-style: normal;
-}
-table{
-	text-align: center;
-}
-td{
-	padding: 10px;
-	font-size: 20pt;
-}
-#wrapper{
-	width: 100%;
-}
-#pageTitle{
-	padding-top: 25px;
+	color: white;
+	font-size: 30pt;
 	padding-bottom: 15px;
 }
-#roleUL{
+.projects{
+	background-color: rgb(72,137,242);
+	box-shadow: 0px 5px 2px rgb(125, 125, 125);
+	color: white;
+	width: 100%;
+	margin: auto;
+	padding: 30px;
+}
+.projWrapper{
+	width: 50%;
+	margin: auto;
+}
+.projText{
+	float: left;
+}
+.projTitle{
+	font-size: 20pt;
+	font-weight: bold;
+	color: white;
+}
+.projDate{
 	font-size: 12pt;
+	font-weight: normal;
+	color: rgb(195, 208, 229);
 }
-#goalsUL{
-	font-size: 22pt;
+.projSkills{
+	font-size: 12pt;
+	font-weight: normal;
+	color: rgb(195, 208, 229);
 }
-.words{
-	width: 75%;
-	margin: auto;
-}
-.subHeading{
-	display: block;
-	width: 100%;
-	margin-bottom: 15px;
-	background-color: white;
-	box-shadow: 0 5px 20px black;
-}
-.blockContainer{
-	display: inline-block;
-	width: 100%;
-	padding-bottom: 25px;
-}
-.sideBlock{
-	display: inline-block;
-	float: left;
-	width: 33%;
-	margin-left: 8.5%;
-	margin-right: 8.5%;
-
-}
-.contentBlock{
-	margin: auto;
-	margin-bottom: 25px;
-	width: 75%;
-}
-.blockText{
-	margin-top: 25px;
-}
-.teamPic{
-	width: 150px;
-	height: 150px;
-	box-shadow: 0 5px 15px black;
-}
-.centerPicLandscape{
-	display: block;
-	margin: auto;
-	width: 55%;
-	margin-top: 15px;
-	margin-bottom: 20px;
-	box-shadow: 0 5px 15px black;
-}
-#interviewOL{
-	margin: 15px 0 0 25px;
-	font-size: 16pt;
-	color: rgb(30,215,190);
-}
-#problemStatement{
-	margin: auto;
-	width: 50%;
-	padding: 50px;
-	font-size: 22pt;
-	color: rgb(30,215,190);
-}
-#personaWrapper{
-	width: 100%;
-	display: inline-block;
-	margin-bottom: 25px;
-}
-.leftPic{
-	display: inline-block;
-	float: left;
-	width: 40%;
-	margin-top: 15px;
-	margin-bottom: 20px;
-	box-shadow: 0 5px 15px black;
-}
-#personaUL{
-	display: inline-block;
-	margin-left: 5%;
-	margin-top: 25px;
-	text-decoration: none;
-	font-size: 18pt;
-	color: rgb(30,215,190);
-}
-#personaUL > li{
-	padding-bottom: 20px;
-}
-#ideationWrapper{
-	width: 50%;
-	display: inline-block;
-	margin: auto;
-	margin-bottom: 25px;
-}
-.ideaDoodle{
-	width: 30%;
-	float-left;
-	margin-left: 15%;
-	margin-bottom: 25px;
-	box-shadow: 0 5px 15px black;
-}
-.linkUp{
-	width: 300px;
-	box-shadow: 0 5px 15px black;
-	margin: auto;
-}
-#linkUpTable{
-	margin: auto;
-	margin-bottom: 25px;
-}
-.eLevelsPic{
-	width: 200px;
-	box-shadow: 0 5px 15px black;
-	margin: auto;
-}
-.eLevelsTable{
-	margin: auto;
-	margin-bottom: 25px;
-}
-#topBoxContainer{
-	display: block;
-	width: 500px;
-	margin: auto;
-}
-#SSTable{
-	margin: auto;
-	margin-bottom: 25px;
-}
-.SSPic{
-	width: 275px;
-	height: 200px;
-	box-shadow: 0 5px 15px black;
-}
-.wireframePic{
-	width: 250px;
-}
-.protoPic{
-	width: 250px;
-	height: 500px;
-	box-shadow: 0 5px 15px black;
-}
-#feedbackUL{
+.projDesc{
 	font-size: 14pt;
-	margin-left: 50px;
-	color: rgb(30,215,190);
+	padding: 15px;
+	color: white;
 }
-#feedbackUL > li{
-	padding-bottom: 5px;
-}
-.picRight{
+.projPic{
 	float: right;
-	width: 350px;
-	margin: 10px;
-	box-shadow: 0 5px 15px black;
-}
-#usabilityTable{
-	margin: auto;
-	border: 2px solid rgb(30,215,190);
-	border-collapse: collapse;
-}
-#usabilityTable tr{
-	border: 2px solid rgb(30,215,190);
-}
-#usabilityTable td{
-	border: 2px solid rgb(30,215,190);
-}
-
-
-#slider {
-  position: relative;
-  overflow: hidden;
-  margin: 20px auto 25px auto;
-  box-shadow: 0 5px 15px black;
-}
-
-#slider ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 200px;
-  list-style: none;
-}
-
-#slider ul li {
-  position: relative;
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 500px;
-  height: 508px;
-  background: white;
-  text-align: center;
-  line-height: 300px;
-}
-
-button.control_prev, button.control_next {
-  position: absolute;
-  top: 40%;
-  z-index: 999;
-  display: block;
-  padding: 4% 3%;
-  width: auto;
-  height: auto;
-  background: #2a2a2a;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-button.control_prev:hover, button.control_next:hover {
-  opacity: 1;
-  -webkit-transition: all 0.2s ease;
-}
-
-button.control_prev {
-  border-radius: 0 2px 2px 0;
-}
-
-button.control_next {
-  right: 0;
-  border-radius: 2px 0 0 2px;
-}
-
-.slider_option {
-  position: relative;
-  margin: 10px auto;
-  width: 160px;
-  font-size: 18px;
+	position: static;
+	width: 35%;
 }

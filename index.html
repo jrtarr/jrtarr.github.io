@@ -3,22 +3,37 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="James Tarr ">
-	<meta name="description" content="Execuwell - Wellness at Work. Resilience in Action.">
+	<meta name="keywords" content="James Tarr Web Developer CAD PLM CATIA Graphic Design">
+	<meta name="description" content="Web Dev. CAD. PLM. Graphic Design. You name it, I got it.">
 	<meta name="author" content="James Tarr">
 	<title>James Tarr</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<script src="https://use.fontawesome.com/2f2e879687.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/controllers/MainController.js"></script>
-	<script src="js/directives/projectInfo.js"></script>
 </head>
 <body ng-app="projectApp">
+	<img class="mainLogo" src="images/JTLogo.svg" "JamesTarr"/>
+	<h1>James Tarr</h1>
+	<h2>Web • CAD • Graphics</h2>
 	<div class="projects" ng-controller="MainController">
-		<proj-info proj="b45s"></proj-info>
-		<proj-info proj="execuwell"></proj-info>
+		<div class="projWrapper">
+			<h2 style="color: white; text-align: left; font-size: 30pt;">Projects</h2>
+			<proj-info proj="b45s"></proj-info>
+			<proj-info proj="execuwell"></proj-info>
+		</div>
+	</div>
+	<div class="aboutMe">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra faucibus odio non feugiat. Phasellus eget semper lectus. Morbi pharetra elit vel odio iaculis, id lacinia magna ultrices. Ut vel augue risus. Duis vel odio fringilla, pretium nunc et, fringilla massa. Donec sit amet lectus vitae neque posuere pretium id eu tellus. Nullam ac dapibus augue. Pellentesque mauris orci, fringilla et sodales eu, blandit at nisi. Morbi nec tortor a nibh maximus egestas. Aliquam porttitor porttitor lectus sit amet mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a ligula vehicula, luctus felis eu, posuere ipsum. Nulla et urna rhoncus turpis placerat consectetur. Donec eros erat, blandit posuere semper a, rhoncus quis mauris. Mauris egestas est rutrum massa consequat, vel elementum libero pharetra. </p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra faucibus odio non feugiat. Phasellus eget semper lectus. Morbi pharetra elit vel odio iaculis, id lacinia magna ultrices. Ut vel augue risus. Duis vel odio fringilla, pretium nunc et, fringilla massa. Donec sit amet lectus vitae neque posuere pretium id eu tellus. Nullam ac dapibus augue. Pellentesque mauris orci, fringilla et sodales eu, blandit at nisi. Morbi nec tortor a nibh maximus egestas. Aliquam porttitor porttitor lectus sit amet mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a ligula vehicula, luctus felis eu, posuere ipsum. Nulla et urna rhoncus turpis placerat consectetur. Donec eros erat, blandit posuere semper a, rhoncus quis mauris. Mauris egestas est rutrum massa consequat, vel elementum libero pharetra. </p>
+	</div>
+	<div class="foot" ng-controller="MainController">
+		<ul class="footerUL">
+			<li ng-repeat="icon in footerIcons"><a  class="footerIcon" href="{{icon.link}}"><i class="{{icon.iFrame}}"></i></a></li>
+		</ul>
 	</div>
 </body>
+<script src="js/app.js"></script>
+<script src="js/controllers/MainController.js"></script>
+<script src="js/directives/projectInfo.js"></script>
 </html>

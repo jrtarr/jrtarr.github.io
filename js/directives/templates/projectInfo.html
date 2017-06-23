@@ -1,9 +1,13 @@
-<div class="projWrapper">
+<div class="proj">
+	<a href="{{proj.link}}">
+		<img class="projPic" ng-src="{{proj.img}}" alt="{{proj.name}} Picture"/>
+	</a>	
 	<div class="projText">
 		<h3 class="projTitle">{{proj.name}}</h3>
-		<p class=projDate>{{proj.startDate | date : mediumDate}} - {{proj.endDate}}</p>
-		<p class="projSkills">Skills Used: {{proj.skillsUsed}}</p>
-		<p class="projDesc">{{proj.description}}</p>	
+		<p class="projDate tinyText">{{proj.startDate | date : mediumDate}} - {{proj.endDate}}</p>
+		<p class="projSkills tinyText">Skills Used: {{proj.skillsUsed}}</p>
+		<p class="projDesc">{{proj.description}}</p>
+		<br/><br/><br/>
+		<a class="projLink tinyText" href="{{proj.link}}">Click Here to View</a>	
 	</div>
-	<img class="projPic" ng-src="{{proj.img}}" alt="{{proj.name}} Picture"/>	
 </div>

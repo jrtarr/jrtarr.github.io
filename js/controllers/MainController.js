@@ -24,6 +24,11 @@ app.controller('MainController', ['$scope', function($scope){
 			link: 'https://twitter.com/jrt1025'
 		},
 		{
+			name: 'instagram',
+			iFrame: 'fa fa-instagram',
+			link: 'https://instagram.com/jrt1025'
+		},
+		{
 			name: 'linkedIn',
 			iFrame: 'fa fa-linkedin-square',
 			link: 'https://www.linkedin.com/in/james-tarr-34849197/'

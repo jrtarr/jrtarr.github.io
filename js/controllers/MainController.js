@@ -1,5 +1,8 @@
 app.controller('MainController', ['$scope', function($scope){
-		$scope.b45s = {
+		$scope.displayCat = 'webdev';
+		$scope.projects = [
+		{
+			category: 'webdev',
 			name: 'Freelance - The B45s',
 			startDate: new Date(2016, 04, 21),
 			endDate: 'Ongoing',
@@ -7,8 +10,9 @@ app.controller('MainController', ['$scope', function($scope){
 			skillsUsed: 'HTML, CSS, Bootstrap',
 			link: 'http://theb45s.com',
 			img: 'images/Projects/b45slogo.svg'
-		};
-		$scope.execuwell = {
+		},
+		{
+			category: 'cad',
 			name: 'Freelance - Execuwell',
 			startDate: new Date(2017, 02, 01),
 			endDate: 'Ongoing',
@@ -16,34 +20,10 @@ app.controller('MainController', ['$scope', function($scope){
 			skillsUsed: 'HTML, CSS, Javascript, JQuery, Bootstrap',
 			link: 'http://execuwell.com',
 			img: 'images/Projects/execuwellLogo.png'
-		};
-		$scope.placeHolder1 = {
-			name: 'PLACEHOLDER1',
-			startDate: new Date(2017, 02, 01),
-			endDate: 'Ongoing',
-			description: 'BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH',
-			skillsUsed: 'HTML, CSS, Javascript, JQuery, Bootstrap',
-			link: 'http://execuwell.com',
-			img: 'images/Projects/execuwellLogo.png'
-		};
-		$scope.placeHolder2 = {
-			name: 'PLACEHOLDER2',
-			startDate: new Date(2017, 02, 01),
-			endDate: 'Ongoing',
-			description: 'BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH',
-			skillsUsed: 'HTML, CSS, Javascript, JQuery, Bootstrap',
-			link: 'http://execuwell.com',
-			img: 'images/Projects/execuwellLogo.png'
-		};
-		$scope.placeHolder3 = {
-			name: 'PLACEHOLDER3',
-			startDate: new Date(2017, 02, 01),
-			endDate: 'Ongoing',
-			description: 'BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH',
-			skillsUsed: 'HTML, CSS, Javascript, JQuery, Bootstrap',
-			link: 'http://execuwell.com',
-			img: 'images/Projects/execuwellLogo.png'
-		};
+		}
+		];
+
+
 		$scope.footerIcons = [
 		{
 			name: 'twitter',
@@ -67,9 +47,22 @@ app.controller('MainController', ['$scope', function($scope){
 		}
 		];
 
-		$scope.changeTester = function(){
+		$scope.setShow = function(index){
 			//document.getElementById('projContainer').innerHTML = "<proj-info proj='execuwell'></proj-info>";
-			document.getElementById('testProj').setAttribute("proj", "execuwell");
 			//$scope.$digest();
-		}
+			if($scope.displayCat == $scope.projects[index].category){
+				return true;
+			}
+		};
+		$scope.catSwap = function(newCat){
+			if(newCat == "web"){
+				$scope.displayCat =	"webdev";
+			} 
+			else if(newCat == "cad"){
+				$scope.displayCat = "cad";
+			}
+			else if(newCat == "gd"){
+				$scope.displayCat = "graphics";
+			}
+		};
 	}]);

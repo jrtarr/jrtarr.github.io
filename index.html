@@ -32,10 +32,25 @@
 		<div class="projWrapper">
 			<h2 style="color: white;">Projects</h2>
 			<div class="projNav" id="ProjectNav">
-				<button id="switchBut" type="button" ng-click="changeTester();">Try Swapping Content</button>
+				<button id="webBtn" type="button" ng-click="catSwap(web);">WebDev</button>
+				<button id="cadBtn" type="button" ng-click="catSwap(cad);">CAD</button>
+				<button id="gdBtn" type="button" ng-click="catSwap(gd);">Graphic Design</button>
 			</div>
 			<div id="projContainer">
-				<proj-info id="testProj" proj='b45s'></proj-info>
+				<!--proj-info ng-repeat="project in projects"></proj-info>-->
+				<div class="proj" ng-repeat="project in projects" ng-show="setShow($index)">
+					<h3 class="projTitle">{{project.name}}</h3>
+					<a href="{{project.link}}">
+						<img class="projPic" ng-src="{{project.img}}" alt="{{project.name}} Picture"/>
+					</a>	
+					<div class="projText">
+						<p class="projDate tinyText">{{project.startDate | date : mediumDate}} - {{project.endDate}}</p>
+						<p class="projSkills tinyText">Skills Used: {{project.skillsUsed}}</p>
+						<p class="projDesc">{{project.description}}</p>
+						<br/><br/><br/>
+						<a class="projLink tinyText" href="{{project.link}}">Click Here to View</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

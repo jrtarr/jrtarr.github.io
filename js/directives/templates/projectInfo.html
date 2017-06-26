@@ -1,13 +1,13 @@
 <div class="proj">
-	<h3 class="projTitle">{{proj.name}}</h3>
-	<a href="{{proj.link}}">
-		<img class="projPic" ng-src="{{proj.img}}" alt="{{proj.name}} Picture"/>
+	<h3 class="projTitle">{{name}}</h3>
+	<a href="{{link}}">
+		<img class="projPic" ng-src="{{img}}" alt="{{name}} Picture"/>
 	</a>	
 	<div class="projText">
-		<p class="projDate tinyText">{{proj.startDate | date : mediumDate}} - {{proj.endDate}}</p>
-		<p class="projSkills tinyText">Skills Used: {{proj.skillsUsed}}</p>
-		<p class="projDesc">{{proj.description}}</p>
+		<p class="projDate tinyText">{{startDate | date : mediumDate}} - {{endDate}}</p>
+		<p class="projSkills tinyText">Skills Used: {{skillsUsed}}</p>
+		<p class="projDesc">{{description}}</p>
 		<br/><br/><br/>
-		<a class="projLink tinyText" href="{{proj.link}}">Click Here to View</a>
+		<a class="projLink tinyText" href="{{link}}">Click Here to View</a>
 	</div>
 </div>

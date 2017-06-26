@@ -17,6 +17,33 @@ app.controller('MainController', ['$scope', function($scope){
 			link: 'http://execuwell.com',
 			img: 'images/Projects/execuwellLogo.png'
 		};
+		$scope.placeHolder1 = {
+			name: 'PLACEHOLDER1',
+			startDate: new Date(2017, 02, 01),
+			endDate: 'Ongoing',
+			description: 'BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH',
+			skillsUsed: 'HTML, CSS, Javascript, JQuery, Bootstrap',
+			link: 'http://execuwell.com',
+			img: 'images/Projects/execuwellLogo.png'
+		};
+		$scope.placeHolder2 = {
+			name: 'PLACEHOLDER2',
+			startDate: new Date(2017, 02, 01),
+			endDate: 'Ongoing',
+			description: 'BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH',
+			skillsUsed: 'HTML, CSS, Javascript, JQuery, Bootstrap',
+			link: 'http://execuwell.com',
+			img: 'images/Projects/execuwellLogo.png'
+		};
+		$scope.placeHolder3 = {
+			name: 'PLACEHOLDER3',
+			startDate: new Date(2017, 02, 01),
+			endDate: 'Ongoing',
+			description: 'BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH',
+			skillsUsed: 'HTML, CSS, Javascript, JQuery, Bootstrap',
+			link: 'http://execuwell.com',
+			img: 'images/Projects/execuwellLogo.png'
+		};
 		$scope.footerIcons = [
 		{
 			name: 'twitter',
@@ -38,5 +65,11 @@ app.controller('MainController', ['$scope', function($scope){
 			iFrame: 'fa fa-github',
 			link: 'https://github.com/jrtarr'
 		}
-		]
+		];
+
+		$scope.changeTester = function(){
+			//document.getElementById('projContainer').innerHTML = "<proj-info proj='execuwell'></proj-info>";
+			document.getElementById('testProj').setAttribute("proj", "execuwell");
+			//$scope.$digest();
+		}
 	}]);

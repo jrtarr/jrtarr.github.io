@@ -2,14 +2,12 @@ app.controller('MainController', ['$scope', function($scope){
 		$scope.displayCat = 'webdev';
 		var date = new Date();
 		date = date.toString();
-		console.log(date);
-		console.log(new Date(2017, 02, 01));
 		$scope.projects = [
 		{
 			category: 'webdev',
 			name: 'The B45s',
-			startDate: new Date(2016, 04, 21),
-			endDate: new Date(),
+			startDate: 'Dec 2015',
+			endDate: 'Ongoing',
 			description: 'Designed, created, and maintained website for Fort Wayne rock band, the B45s.',
 			skillsUsed: 'HTML, CSS, Bootstrap',
 			link: 'http://theb45s.com',
@@ -18,8 +16,8 @@ app.controller('MainController', ['$scope', function($scope){
 		{
 			category: 'webdev',
 			name: 'Execuwell',
-			startDate: new Date(2017, 02, 01),
-			endDate: new Date(),
+			startDate: 'Jan 2016',
+			endDate: 'Ongoing',
 			description: 'Designed, created, and maintained website for Indianapolis-area wellness consultancy, Execuwell.',
 			skillsUsed: 'HTML, CSS, Javascript, JQuery, Bootstrap',
 			link: 'http://execuwell.com',
@@ -28,8 +26,8 @@ app.controller('MainController', ['$scope', function($scope){
 		{
 			category: 'graphics',
 			name: 'My Apollo Debut Poster',
-			startDate: new Date(2016, 05, 15),
-			endDate: new Date(2016, 05, 17),
+			startDate: 'May 14, 2016',
+			endDate: 'May 17, 2016',
 			description: 'Commissioned to create poster for Fort Wayne band My Apollo\'s debut performance.',
 			skillsUsed: 'Adobe Illustrator, Adobe Photoshop',
 			link: 'https://www.facebook.com/myapolloofficial/photos/a.1785673638331860.1073741829.1781663952066162/1785672838331940/?type=3&theater',
@@ -38,18 +36,28 @@ app.controller('MainController', ['$scope', function($scope){
 		{
 			category: 'graphics',
 			name: 'My Apollo @ CS3 Poster',
-			startDate: new Date(2016, 08, 11),
-			endDate: new Date(2016, 08, 14),
+			startDate: 'Aug 11, 2016',
+			endDate: 'Aug 14, 2016',
 			description: 'Commissioned to create poster for Fort Wayne band My Apollo.',
 			skillsUsed: 'Adobe Illustrator, Adobe Photoshop',
 			link: 'https://www.facebook.com/myapolloofficial/photos/a.1781664765399414.1073741827.1781663952066162/1822640307968526/?type=3&theater',
 			img: 'images/Projects/GraphicDesign/PopArt.png'
 		},
 		{
+			category: 'graphics',
+			name: 'My Apollo Middlewaves Poster',
+			startDate: 'June 26, 2017',
+			endDate: 'June 27, 2017',
+			description: 'Designed poster for My Apollo\'s first festival performance at the upcoming Middlewaves Music Festival.',
+			skillsUsed: 'Adobe Illustrator, Adobe Photoshop',
+			link: '#',
+			img: 'images/Projects/GraphicDesign/MAMiddlewaves.png'
+		},
+		{
 			category: 'cad',
 			name: 'PLACEHOLDER CATIA PROJECT',
-			startDate: new Date(2016, 08, 15),
-			endDate: new Date(2016, 09, 17),
+			startDate: 'Dec 31, 2016',
+			endDate: 'Dec 34, 2016',
 			description: 'Make a fake CAD project in CATIA to prove this space works',
 			skillsUsed: 'Dassault CATIA v24',
 			link: '#',
@@ -58,8 +66,8 @@ app.controller('MainController', ['$scope', function($scope){
 		{
 			category: 'cad',
 			name: 'PLACEHOLDER NX PROJECT',
-			startDate: new Date(2016, 010, 11),
-			endDate: new Date(2016, 11, 14),
+			startDate: 'Dec 31, 2016',
+			endDate: 'Dec 34, 2016',
 			description: 'I made a fake project in NX9 to prove this space loads properly. Hopefully a real one appears soon.',
 			skillsUsed: 'NX9',
 			link: '#',
@@ -90,6 +98,16 @@ app.controller('MainController', ['$scope', function($scope){
 			link: 'https://github.com/jrtarr'
 		}
 		];
+		/*--------------Functions--------------*/
+		$scope.dateFilter = function(index){
+			if($scope.projects[index].endDate == "Ongoing"){
+				return "Ongoing";
+			}
+			else{
+				console.log($scope.projects[index].endDate);
+				//return $scope.projects[index].endDate.prototype.toDateString();
+			}
+		};
 
 		$scope.setShow = function(index){
 			//document.getElementById('projContainer').innerHTML = "<proj-info proj='execuwell'></proj-info>";
@@ -111,5 +129,20 @@ app.controller('MainController', ['$scope', function($scope){
 			}
 		};
 
-		$scope.$watch
+		$scope.modalExpand = function(index){
+			var pic = $scope.projects[index];
+
+			modal.style.display = "block";
+			modalImg.src = pic.img;
+			captionText.innerHTML = pic.description;
+		}
+
+		$scope.linkChecker = function(index){
+			if($scope.projects[index].category == "webdev"){
+				return "Click Here to View";
+			}
+			else if($scope.projects[index].category == "cad" | $scope.projects[index].category == "graphics"){
+				return "Click Here to Expand Image";
+			}
+		};
 	}]);

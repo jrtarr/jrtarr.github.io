@@ -8,7 +8,7 @@
 	<meta name="author" content="James Tarr">
 	<title>James Tarr</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=News+Cycle|Quicksand" rel="stylesheet">
 	<link rel="icon" href="images/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<script src="https://use.fontawesome.com/2f2e879687.js"></script>
@@ -40,18 +40,23 @@
 				<!--proj-info ng-repeat="project in projects"></proj-info>-->
 				<div class="proj" ng-repeat="project in projects" ng-show="setShow($index)">
 					<h3 class="projTitle">{{project.name}}</h3>
-					<a href="{{project.link}}">
-						<img class="projPic" ng-src="{{project.img}}" alt="{{project.name}} Picture"/>
-					</a>	
+					<img class="projPic" ng-src="{{project.img}}" alt="{{project.name}} Picture" ng-click="modalExpand($index)"/>
 					<div class="projText">
-						<p class="projDate tinyText">{{project.startDate | date : mediumDate}} - {{project.endDate}}</p>
+						<p class="projDate tinyText">{{project.startDate}} - {{project.endDate}}</p>
 						<p class="projSkills tinyText">Skills Used: {{project.skillsUsed}}</p>
 						<p class="projDesc">{{project.description}}</p>
 						<br/><br/><br/>
-						<a class="projLink tinyText" href="{{project.link}}">Click Here to View</a>
+						<a class="projLink tinyText" href="{{project.link}}">{{linkChecker($index)}}</a>
 					</div>
 				</div>
 			</div>
+			<!--Modal-->
+			<div id="projModal" class="modal">
+				<span class="close" onclick="document.getElementById('projModal').style.display='none'">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+			<!--End Modal-->
 		</div>
 	</div>
 

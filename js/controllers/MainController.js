@@ -129,6 +129,18 @@ app.controller('MainController', ['$scope', function($scope){
 			}
 		};
 
+		$scope.picClass = function(index){
+			if($scope.projects[index].category == "webdev"){
+				return "projPic webPic";
+			}
+			else if($scope.projects[index].category == "cad"){
+				return "projPic cadPic";
+			}
+			else{
+				return "projPic gdPic";
+			}
+		}
+
 		$scope.modalExpand = function(index){
 			var pic = $scope.projects[index];
 
@@ -142,7 +154,17 @@ app.controller('MainController', ['$scope', function($scope){
 				return "Click Here to View";
 			}
 			else if($scope.projects[index].category == "cad" | $scope.projects[index].category == "graphics"){
-				return "Click Here to Expand Image";
+				return "Click Here to See Full Image";
 			}
 		};
+
+		$scope.linkFilter = function(index){
+			if($scope.projects[index].category == "webdev"){
+				window.location.href = $scope.projects[index].link;
+			}
+			else{
+				$scope.modalExpand(index);
+			}
+		}
 	}]);
+

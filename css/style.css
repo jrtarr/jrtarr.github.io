@@ -41,6 +41,20 @@ a:link{
 a:hover{
 	text-decoration: underline;
 }
+@media (max-width: 768px){
+	.mainLogo{
+		width: 100px;
+	}
+	.about > p{
+		font-size: 14pt;
+	}
+	h1{
+		font-size: 30pt;
+	}
+	h2{
+		font-size: 20pt;
+	}
+}
 /*-----------Project CSS-----------------*/
 #navCollapser{
 	display: flex;
@@ -89,6 +103,7 @@ a:hover{
 	justify-content: center;
 	align-content: center;
 	align-items: center;
+	padding: 10px 0 10px 0;
 	transition: opacity .5s, height .5s ease;
 	-webkit-transition: opacity .5s, max-height .5s ease;
 }
@@ -180,9 +195,19 @@ a:hover{
 	}
 	.proj{
 		flex-direction: column-reverse;
+		width: 100%;
+	}
+	.projText, .projDesc{
+		width: 100%;
 	}
 	.projPic{
 		display: none;
+	}
+	.projects>.projWrapper>h2{
+		font-size: 25pt;
+	}
+	.projLink{
+		font-size: 16pt;
 	}
 }
 /*---------------------Footer--------------------*/

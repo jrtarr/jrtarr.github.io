@@ -8,7 +8,7 @@
 	<meta name="author" content="James Tarr">
 	<title>James Tarr</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=News+Cycle|Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
 	<link rel="icon" href="images/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<script src="https://use.fontawesome.com/2f2e879687.js"></script>
@@ -17,7 +17,7 @@
 <body ng-app="projectApp">
 
 	<!--Header-->
-	<img class="mainLogo" src="images/JTLogo.svg" "JamesTarr"/>
+	<img class="mainLogo" src="images/JTLogo.svg" alt="JamesTarr"/>
 	<h1>James Tarr</h1>
 	<h2 style="text-align: center; font-size: 20pt;">Web • CAD • Graphics</h2>
 
@@ -53,13 +53,13 @@
 						<p class="projDesc">{{project.description}}</p>
 						<span class="projLink tinyText" ng-click="linkFilter($index)">{{linkChecker($index)}}</span>
 					</div>
-					<img class="{{picClass($index)}}" ng-src="{{project.img}}" alt="{{project.name}} Picture" ng-click="modalExpand($index)"/>
+					<img class="{{picClass($index)}}" ng-src="{{project.img}}" alt="{{project.name}}" ng-click="modalExpand($index)"/>
 				</div>
 			</div>
 			<!--Modal-->
 			<div id="projModal" class="modal">
 				<span class="close" onclick="document.getElementById('projModal').style.display='none'">&times;</span>
-				<img class="modal-content" id="img01">
+				<img class="modal-content" alt="expanded image" id="img01">
 				<div id="caption"></div>
 			</div>
 			<!--End Modal-->

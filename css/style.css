@@ -62,40 +62,34 @@ a:hover{
 	width: 50px;
 	height: 6px;
 }
-.bar1Animate{
-	animation-name: barOne;
-	animation-duration: .5s;
-	animation-direction: alternate;
-	animation-fill-mode: forwards;
-	animation-timing-function: easeOutBack;
-	-webkit-animation-name: barOne;
-	-webkit-animation-duration: .5s;
-	-webkit-animation-fill-mode: forwards;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-timing-function: easeOutBack;
+
+.bar1X{
+	animation: barOne .5s forwards;
+	-webkit-animation: barOne .5s forwards;
 }
-.bar2Animate{
-	animation-name: barTwo;
-	animation-duration: .5s;
-	animation-direction: alternate;
-	animation-fill-mode: forwards;
-	-webkit-animation-name: barTwo;
-	-webkit-animation-duration: .5s;
-	-animation-fill-mode: forwards;
-	-webkit-animation-direction: alternate;
+.bar2X{
+	animation: barTwo .5s forwards;
+	-webkit-animation: barTwo .5s forwards;
 }
-.bar3Animate{
-	animation-name: barThree;
-	animation-duration: .5s;
-	animation-direction: alternate;
-	animation-fill-mode: forwards;
-	animation-timing-function: easeOutBack;
-	-webkit-animation-name: barThree;
-	-webkit-animation-duration: .5s;
-	-webkit-animation-fill-mode: forwards;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-timing-function: easeOutBack;
+.bar3X{
+	animation: barThree .5s forwards;
+	-webkit-animation: barThree .5s forwards;
 }
+
+
+.bar1Line{
+	animation: barFour .5s forwards;
+	-webkit-animation: barOne .5s reverse;
+}
+.bar2Line{
+	animation: barFive .5s forwards;
+	-webkit-animation: barTwo .5s reverse;
+}
+.bar3Line{
+	animation: barSix .5s forwards;
+	-webkit-animation: barThree .5s reverse;
+}
+
 .projNav > li{
 	display: inline;
 }
@@ -110,54 +104,6 @@ a:hover{
 }
 .btn:hover{
 	text-decoration: underline;
-}
-
-@keyframes barOne{
-	from {
-		transform: rotate(0deg) translate(0, 0) ;
-	}
-	to {
-		transform: rotate(45deg) translate(12.5px, 12.5px);
-	}
-}
-@-webkit-keyframes barOne{
-	from {
-		-webkit-transform: rotate(0deg) translate(0, 0);
-	}
-	to {
-		-webkit-transform: rotate(45deg) translate(10px, 12.5px);
-	}
-}@keyframes barTwo{
-	from {
-		transform: scale(100%);
-	}
-	to {
-		transform: scale(0);
-	}
-}
-@-webkit-keyframes barTwo{
-	from {
-		-webkit-transform: scale(100%);
-	}
-	to {
-		-webkit-transform: scale(0);
-	}
-}
-@keyframes barThree{
-	from {
-		transform: rotate(0deg) translate(0,0);
-	}
-	to {
-		transform: rotate(-45deg) translate(10px, -12.5px);
-	}
-}
-@-webkit-keyframes barThree{
-	from {
-		-webkit-transform: rotate(0deg) translate(0,0);
-	}
-	to {
-		-webkit-transform: rotate(-45deg) translate(10px, -12.5px);
-	}
 }
 /*Projects Start*/
 .projects{
@@ -332,5 +278,101 @@ a:hover{
 @media only screen and (max-width: 700px){
 	.modal-content{
 		width: 100%;
+	}
+}
+/*-------------Keyframes--------*/
+@keyframes barOne{
+	from {
+		transform: rotate(0deg) translate(0, 0);
+	}
+	to {
+		transform: rotate(45deg) translate(12.5px, 12.5px);
+	}
+}
+@-webkit-keyframes barOne{
+	from {
+		-webkit-transform: rotate(0deg) translate(0, 0);
+	}
+	to {
+		-webkit-transform: rotate(45deg) translate(10px, 12.5px);
+	}
+}@keyframes barTwo{
+	from {
+		transform: scale(100%);
+	}
+	to {
+		transform: scale(0);
+	}
+}
+@-webkit-keyframes barTwo{
+	from {
+		-webkit-transform: scale(100%);
+	}
+	to {
+		-webkit-transform: scale(0);
+	}
+}
+@keyframes barThree{
+	from {
+		transform: rotate(0deg) translate(0,0);
+	}
+	to {
+		transform: rotate(-45deg) translate(10px, -12.5px);
+	}
+}
+@-webkit-keyframes barThree{
+	from {
+		-webkit-transform: rotate(0deg) translate(0,0);
+	}
+	to {
+		-webkit-transform: rotate(-45deg) translate(10px, -12.5px);
+	}
+}
+
+@keyframes barFour{
+	from {
+		transform: rotate(45deg) translate(12.5px, 12.5px);
+	}
+	to {
+		transform: rotate(0deg) translate(0, 0);
+	}
+}
+@-webkit-keyframes barFour{
+	from {
+		-webkit-transform: rotate(45deg) translate(10px, 12.5px);
+	}
+	to {
+		-webkit-transform: rotate(0deg) translate(0, 0);
+	}
+}@keyframes barFive{
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(100%);
+	}
+}
+@-webkit-keyframes barFive{
+	from {
+		-webkit-transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(100%);
+	}
+}
+@keyframes barSix{
+	from {
+		transform: rotate(-45deg) translate(10px, -12.5px);
+	}
+	to {
+		transform: rotate(0deg) translate(0,0);
+	}
+}
+@-webkit-keyframes barSix{
+	from {
+		-webkit-transform: rotate(-45deg) translate(10px, -12.5px);
+	}
+	to {
+		-webkit-transform: rotate(0deg) translate(0,0);
 	}
 }

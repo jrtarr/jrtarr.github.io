@@ -176,16 +176,22 @@ app.controller('MainController', ['$scope', function($scope){
 			console.log(document.getElementById("navCollapser").className);*/
 			if(document.getElementById("navCollapser").className != "animated"){
 				document.getElementById("navCollapser").className += "animated";
-				document.getElementById("bar1").className += " bar1Animate";
-				document.getElementById("bar2").className += " bar2Animate";
-				document.getElementById("bar3").className += " bar3Animate";
+				document.getElementById("bar1").className = document.getElementById("bar1").className.replace("bar1Line","");
+				document.getElementById("bar1").className += " bar1X";
+				document.getElementById("bar2").className = document.getElementById("bar2").className.replace("bar2Line","");
+				document.getElementById("bar2").className += " bar2X";
+				document.getElementById("bar3").className = document.getElementById("bar3").className.replace("bar3Line","");
+				document.getElementById("bar3").className += " bar3X";
 			}
 			else{
 				document.getElementById("navCollapser").className = document.getElementById("navCollapser").className.replace("animated", "");
-				document.getElementById("bar1").className = document.getElementById("bar1").className.replace(" bar1Animate", "");
-				document.getElementById("bar2").className = document.getElementById("bar2").className.replace(" bar2Animate", "");
-				document.getElementById("bar3").className = document.getElementById("bar3").className.replace(" bar3Animate", "");
+				document.getElementById("bar1").className = document.getElementById("bar1").className.replace("bar1X","");
+				document.getElementById("bar1").className += " bar1Line";
+				document.getElementById("bar2").className = document.getElementById("bar2").className.replace("bar2X","");
+				document.getElementById("bar2").className += " bar2Line";
+				document.getElementById("bar3").className = document.getElementById("bar3").className.replace("bar3X","");
+				document.getElementById("bar3").className += " bar3Line";
 			}
-		}
+		};
 	}]);
 

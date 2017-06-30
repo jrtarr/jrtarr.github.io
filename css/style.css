@@ -204,7 +204,9 @@ a:hover{
 		display: none;
 	}
 	.projects>.projWrapper>h2{
-		font-size: 25pt;
+		font-size: 35pt;
+		text-align: center;
+		margin-bottom: 15px;
 	}
 	.projLink{
 		font-size: 16pt;
@@ -309,8 +311,14 @@ a:hover{
 	text-decoration: none;
 	cursor: pointer;
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 768px){
+	.modal{
+		overflow: hidden;
+	}
 	.modal-content{
-		width: 100%;
+		width: 90%;
+	}
+	#caption{
+		display: none;
 	}
 }

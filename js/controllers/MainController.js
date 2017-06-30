@@ -118,6 +118,8 @@ app.controller('MainController', ['$scope', function($scope){
 		};
 
 		$scope.catSwap = function(newCat){
+			var navEl = document.getElementById('navCollapser');
+			var navBar = document.getElementById('projNav');
 			if(newCat == "web"){
 				$scope.displayCat =	"webdev";
 				navEl.classList.remove("animated");

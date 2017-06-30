@@ -42,12 +42,6 @@ a:hover{
 	text-decoration: underline;
 }
 /*-----------Project CSS-----------------*/
-.projNav{
-	width: 70%;
-	text-align: center;
-	margin: auto;
-	display: block;
-}
 #navCollapser{
 	display: flex;
 	flex-direction: column;
@@ -61,18 +55,6 @@ a:hover{
 	border: none;
 	cursor: pointer;
 }
-#navCollapser #bar1, #navCollapser #bar2, #navCollapser #bar3{
-	transition: transform .5s ease;
-}
-#navCollapser.animated #bar1{
-	transform: rotate(45deg) translate(12.5px, 9.375px);
-}
-#navCollapser.animated #bar2{
-	transform: rotate(1440deg) scale(0);
-}
-#navCollapser.animated #bar3{
-	transform: rotate(-45deg) translate(12.5px, -9.375px);
-}
 .iconBar{
 	margin: 5px 0 5px 0;
 	display: block;
@@ -80,8 +62,37 @@ a:hover{
 	width: 50px;
 	height: 5px;
 }
-
-.projNav > li{
+#navCollapser #bar1, #navCollapser #bar2, #navCollapser #bar3{
+	transition: transform .5s ease;
+}
+#navCollapser.animated #bar1{
+	transform: rotate(45deg) translate(12.5px, 9.375px);
+}
+#navCollapser.animated #bar2{
+	transform: scale(0);
+}
+#navCollapser.animated #bar3{
+	transform: rotate(-45deg) translate(12.5px, -9.375px);
+}
+#projNav.animated{
+	opacity: 1;
+	max-height: 65px;
+	transition: opacity .5s, height .5s ease;
+	-webkit-transition: opacity .5s, max-height .5s ease;
+}
+#projNav{
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	transition: opacity .5s, height .5s ease;
+	-webkit-transition: opacity .5s, max-height .5s ease;
+}
+#projNav > li{
 	display: inline;
 }
 .btn{
@@ -113,7 +124,7 @@ a:hover{
 	padding: 15px;
 }
 .projWrapper{
-	width: 55%;
+	width: 75%;
 	margin: auto;
 }
 .projText{
@@ -158,6 +169,15 @@ a:hover{
 	display: block;
 }
 @media (max-width: 768px){
+	#projNav{
+		flex-direction: column;
+	}
+	#projNav.animated{
+		opacity: 1;
+		max-height: 220px;
+		transition: opacity .5s, height .5s ease;
+		-webkit-transition: opacity .5s, max-height .5s ease;
+	}
 	.proj{
 		flex-direction: column-reverse;
 	}

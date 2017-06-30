@@ -169,11 +169,14 @@ app.controller('MainController', ['$scope', function($scope){
 
 		$scope.animate = function(){
 			var navEl = document.getElementById('navCollapser');
+			var navBar = document.getElementById('projNav');
 			if(!navEl.classList.contains("animated")){
 				navEl.classList.add("animated");
+				navBar.classList.add("animated");
 			}
 			else{
 				navEl.classList.remove("animated");
+				navBar.classList.remove("animated");
 			}
 			//var navEl = document.getElementById('navCollapser');
 

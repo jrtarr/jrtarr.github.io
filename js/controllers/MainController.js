@@ -120,12 +120,18 @@ app.controller('MainController', ['$scope', function($scope){
 		$scope.catSwap = function(newCat){
 			if(newCat == "web"){
 				$scope.displayCat =	"webdev";
+				navEl.classList.remove("animated");
+				navBar.classList.remove("animated");
 			} 
 			else if(newCat == "cad"){
 				$scope.displayCat = "cad";
+				navEl.classList.remove("animated");
+				navBar.classList.remove("animated");
 			}
 			else if(newCat == "gd"){
 				$scope.displayCat = "graphics";
+				navEl.classList.remove("animated");
+				navBar.classList.remove("animated");
 			}
 		};
 

@@ -189,7 +189,7 @@ a:hover{
 	}
 	#projNav.animated{
 		opacity: 1;
-		max-height: 220px;
+		max-height: 235px;
 		transition: opacity .5s, height .5s ease;
 		-webkit-transition: opacity .5s, max-height .5s ease;
 	}

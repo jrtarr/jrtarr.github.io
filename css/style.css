@@ -49,45 +49,36 @@ a:hover{
 	display: block;
 }
 #navCollapser{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	margin: auto;
 	width: 50px;
 	height: 50px;
 	background-color: rgb(72,137,242);
 	border: none;
 	cursor: pointer;
 }
+#navCollapser #bar1, #navCollapser #bar2, #navCollapser #bar3{
+	transition: transform .5s ease;
+}
+#navCollapser.animated #bar1{
+	transform: rotate(45deg) translate(12.5px, 9.375px);
+}
+#navCollapser.animated #bar2{
+	transform: rotate(1440deg) scale(0);
+}
+#navCollapser.animated #bar3{
+	transform: rotate(-45deg) translate(12.5px, -9.375px);
+}
 .iconBar{
+	margin: 5px 0 5px 0;
 	display: block;
-	margin-top: 10px;
 	background-color: white;
 	width: 50px;
-	height: 6px;
-}
-
-.bar1X{
-	animation: barOne .5s forwards;
-	-webkit-animation: barOne .5s forwards;
-}
-.bar2X{
-	animation: barTwo .5s forwards;
-	-webkit-animation: barTwo .5s forwards;
-}
-.bar3X{
-	animation: barThree .5s forwards;
-	-webkit-animation: barThree .5s forwards;
-}
-
-
-.bar1Line{
-	animation: barFour .5s forwards;
-	-webkit-animation: barOne .5s reverse;
-}
-.bar2Line{
-	animation: barFive .5s forwards;
-	-webkit-animation: barTwo .5s reverse;
-}
-.bar3Line{
-	animation: barSix .5s forwards;
-	-webkit-animation: barThree .5s reverse;
+	height: 5px;
 }
 
 .projNav > li{
@@ -188,19 +179,17 @@ a:hover{
 	text-align: center;
 }
 .footerUL > li{
+	font-size: 25pt;
 	display: inline;
 	padding: 0 25px 10px 25px;
 }
 .footerIcon:link{
-	font-size: 25pt;
 	color: rgb(72,137,242);
 }
 .footerIcon:visited{
-	font-size: 25pt;
 	color: rgb(72,137,242);
 }
 .footerIcon:hover{
-	font-size: 25pt;
 	color: rgb(42,97,202);
 	-webkit-transition: 300ms all ease;
 	-moz-transition: 300ms all ease;
@@ -278,101 +267,5 @@ a:hover{
 @media only screen and (max-width: 700px){
 	.modal-content{
 		width: 100%;
-	}
-}
-/*-------------Keyframes--------*/
-@keyframes barOne{
-	from {
-		transform: rotate(0deg) translate(0, 0);
-	}
-	to {
-		transform: rotate(45deg) translate(12.5px, 12.5px);
-	}
-}
-@-webkit-keyframes barOne{
-	from {
-		-webkit-transform: rotate(0deg) translate(0, 0);
-	}
-	to {
-		-webkit-transform: rotate(45deg) translate(10px, 12.5px);
-	}
-}@keyframes barTwo{
-	from {
-		transform: scale(100%);
-	}
-	to {
-		transform: scale(0);
-	}
-}
-@-webkit-keyframes barTwo{
-	from {
-		-webkit-transform: scale(100%);
-	}
-	to {
-		-webkit-transform: scale(0);
-	}
-}
-@keyframes barThree{
-	from {
-		transform: rotate(0deg) translate(0,0);
-	}
-	to {
-		transform: rotate(-45deg) translate(10px, -12.5px);
-	}
-}
-@-webkit-keyframes barThree{
-	from {
-		-webkit-transform: rotate(0deg) translate(0,0);
-	}
-	to {
-		-webkit-transform: rotate(-45deg) translate(10px, -12.5px);
-	}
-}
-
-@keyframes barFour{
-	from {
-		transform: rotate(45deg) translate(12.5px, 12.5px);
-	}
-	to {
-		transform: rotate(0deg) translate(0, 0);
-	}
-}
-@-webkit-keyframes barFour{
-	from {
-		-webkit-transform: rotate(45deg) translate(10px, 12.5px);
-	}
-	to {
-		-webkit-transform: rotate(0deg) translate(0, 0);
-	}
-}@keyframes barFive{
-	from {
-		transform: scale(0);
-	}
-	to {
-		transform: scale(100%);
-	}
-}
-@-webkit-keyframes barFive{
-	from {
-		-webkit-transform: scale(0);
-	}
-	to {
-		-webkit-transform: scale(100%);
-	}
-}
-@keyframes barSix{
-	from {
-		transform: rotate(-45deg) translate(10px, -12.5px);
-	}
-	to {
-		transform: rotate(0deg) translate(0,0);
-	}
-}
-@-webkit-keyframes barSix{
-	from {
-		-webkit-transform: rotate(-45deg) translate(10px, -12.5px);
-	}
-	to {
-		-webkit-transform: rotate(0deg) translate(0,0);
 	}
 }

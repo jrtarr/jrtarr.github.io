@@ -168,30 +168,15 @@ app.controller('MainController', ['$scope', function($scope){
 		}
 
 		$scope.animate = function(){
-
-			/*document.getElementById("navCollapser").className += "test";
-			document.getElementById("navCollapser").className += " test2";
-			console.log(document.getElementById("navCollapser").className);
-			document.getElementById("navCollapser").className = document.getElementById("navCollapser").className.replace(" test2","");
-			console.log(document.getElementById("navCollapser").className);*/
-			if(document.getElementById("navCollapser").className != "animated"){
-				document.getElementById("navCollapser").className += "animated";
-				document.getElementById("bar1").className = document.getElementById("bar1").className.replace("bar1Line","");
-				document.getElementById("bar1").className += " bar1X";
-				document.getElementById("bar2").className = document.getElementById("bar2").className.replace("bar2Line","");
-				document.getElementById("bar2").className += " bar2X";
-				document.getElementById("bar3").className = document.getElementById("bar3").className.replace("bar3Line","");
-				document.getElementById("bar3").className += " bar3X";
+			var navEl = document.getElementById('navCollapser');
+			if(!navEl.classList.contains("animated")){
+				navEl.classList.add("animated");
 			}
 			else{
-				document.getElementById("navCollapser").className = document.getElementById("navCollapser").className.replace("animated", "");
-				document.getElementById("bar1").className = document.getElementById("bar1").className.replace("bar1X","");
-				document.getElementById("bar1").className += " bar1Line";
-				document.getElementById("bar2").className = document.getElementById("bar2").className.replace("bar2X","");
-				document.getElementById("bar2").className += " bar2Line";
-				document.getElementById("bar3").className = document.getElementById("bar3").className.replace("bar3X","");
-				document.getElementById("bar3").className += " bar3Line";
+				navEl.classList.remove("animated");
 			}
+			//var navEl = document.getElementById('navCollapser');
+
 		};
 	}]);
 

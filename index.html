@@ -31,10 +31,17 @@
 	<div class="projects" ng-controller="MainController">
 		<div class="projWrapper">
 			<h2 style="color: white;">Projects</h2>
-			<div class="projNav" id="ProjectNav">
-				<button class="btn webBtn" ng-click="catSwap('web')">WebDev</button>
-				<button class="btn cadBtn" ng-click="catSwap('cad')">CAD</button>
-				<button class="btn gdBtn" ng-click="catSwap('gd')">Graphic Design</button>
+			<div>
+				<button id="navCollapser" type="button" ng-click="animate()">
+					<span class="iconBar" id="bar1"></span>
+					<span class="iconBar" id="bar2"></span>
+					<span class="iconBar" id="bar3"></span>
+				</button>
+				<ul class="projNav" id="ProjectNav">
+					<li><button class="btn webBtn" ng-click="catSwap('web')">WebDev</button></li>
+					<li><button class="btn cadBtn" ng-click="catSwap('cad')">CAD</button></li>
+					<li><button class="btn gdBtn" ng-click="catSwap('gd')">Graphic Design</button></li>
+				</ul>
 			</div>
 			<div id="projContainer">
 				<!--proj-info ng-repeat="project in projects"></proj-info>-->

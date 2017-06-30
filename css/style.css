@@ -46,6 +46,58 @@ a:hover{
 	width: 70%;
 	text-align: center;
 	margin: auto;
+	display: block;
+}
+#navCollapser{
+	width: 50px;
+	height: 50px;
+	background-color: rgb(72,137,242);
+	border: none;
+	cursor: pointer;
+}
+.iconBar{
+	display: block;
+	margin-top: 10px;
+	background-color: white;
+	width: 50px;
+	height: 6px;
+}
+.bar1Animate{
+	animation-name: barOne;
+	animation-duration: .5s;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-timing-function: easeOutBack;
+	-webkit-animation-name: barOne;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: easeOutBack;
+}
+.bar2Animate{
+	animation-name: barTwo;
+	animation-duration: .5s;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	-webkit-animation-name: barTwo;
+	-webkit-animation-duration: .5s;
+	-animation-fill-mode: forwards;
+	-webkit-animation-direction: alternate;
+}
+.bar3Animate{
+	animation-name: barThree;
+	animation-duration: .5s;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-timing-function: easeOutBack;
+	-webkit-animation-name: barThree;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: easeOutBack;
+}
+.projNav > li{
+	display: inline;
 }
 .btn{
 	background: none;
@@ -60,6 +112,54 @@ a:hover{
 	text-decoration: underline;
 }
 
+@keyframes barOne{
+	from {
+		transform: rotate(0deg) translate(0, 0) ;
+	}
+	to {
+		transform: rotate(45deg) translate(12.5px, 12.5px);
+	}
+}
+@-webkit-keyframes barOne{
+	from {
+		-webkit-transform: rotate(0deg) translate(0, 0);
+	}
+	to {
+		-webkit-transform: rotate(45deg) translate(10px, 12.5px);
+	}
+}@keyframes barTwo{
+	from {
+		transform: scale(100%);
+	}
+	to {
+		transform: scale(0);
+	}
+}
+@-webkit-keyframes barTwo{
+	from {
+		-webkit-transform: scale(100%);
+	}
+	to {
+		-webkit-transform: scale(0);
+	}
+}
+@keyframes barThree{
+	from {
+		transform: rotate(0deg) translate(0,0);
+	}
+	to {
+		transform: rotate(-45deg) translate(10px, -12.5px);
+	}
+}
+@-webkit-keyframes barThree{
+	from {
+		-webkit-transform: rotate(0deg) translate(0,0);
+	}
+	to {
+		-webkit-transform: rotate(-45deg) translate(10px, -12.5px);
+	}
+}
+/*Projects Start*/
 .projects{
 	background-color: rgb(72,137,242);
 	color: white;
@@ -129,7 +229,6 @@ a:hover{
 	}
 }
 /*---------------------Footer--------------------*/
-
 .foot{
 	width: 100%;
 	bottom: 0px;

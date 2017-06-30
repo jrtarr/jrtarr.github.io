@@ -166,5 +166,26 @@ app.controller('MainController', ['$scope', function($scope){
 				$scope.modalExpand(index);
 			}
 		}
+
+		$scope.animate = function(){
+
+			/*document.getElementById("navCollapser").className += "test";
+			document.getElementById("navCollapser").className += " test2";
+			console.log(document.getElementById("navCollapser").className);
+			document.getElementById("navCollapser").className = document.getElementById("navCollapser").className.replace(" test2","");
+			console.log(document.getElementById("navCollapser").className);*/
+			if(document.getElementById("navCollapser").className != "animated"){
+				document.getElementById("navCollapser").className += "animated";
+				document.getElementById("bar1").className += " bar1Animate";
+				document.getElementById("bar2").className += " bar2Animate";
+				document.getElementById("bar3").className += " bar3Animate";
+			}
+			else{
+				document.getElementById("navCollapser").className = document.getElementById("navCollapser").className.replace("animated", "");
+				document.getElementById("bar1").className = document.getElementById("bar1").className.replace(" bar1Animate", "");
+				document.getElementById("bar2").className = document.getElementById("bar2").className.replace(" bar2Animate", "");
+				document.getElementById("bar3").className = document.getElementById("bar3").className.replace(" bar3Animate", "");
+			}
+		}
 	}]);
 

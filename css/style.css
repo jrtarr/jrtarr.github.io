@@ -172,10 +172,10 @@ a:hover{
 	width: 300px;
 }
 .cadPic{
-	width: 200px;
+	width: 300px;
 }
 .gdPic{
-	width: 150px;
+	width: 200px;
 }
 #projBreakBar{
 	width: 100%;
@@ -265,8 +265,8 @@ a:hover{
 .modal-content{
 	margin: auto;
 	display: block;
-	width: 80%;
-	max-width: 400px;
+	width: 100%;
+	max-width: 700px;
 }
 #caption{
 	margin: auto;
@@ -313,7 +313,7 @@ a:hover{
 }
 @media only screen and (max-width: 700px){
 	.modal-content{
-		width: 75%;
+		width: 80%;
 	}
 	#caption{
 		display: none;

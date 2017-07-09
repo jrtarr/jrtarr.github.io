@@ -24,54 +24,94 @@ app.controller('MainController', ['$scope', function($scope){
 			img: 'images/Projects/Web/execuwellLogo.png'
 		},
 		{
+			category: 'webdev',
+			name: 'FlexAble',
+			startDate: 'March 2017',
+			endDate: 'May 2017',
+			description: 'Developed app idea from problem identification up to functional wireframing to practice understanding user needs, idea formulation techniques, and basic UX principles.',
+			skillsUsed: 'Affinity Diagramming, Persona/Scenario Building, Sketching, UX Design, Balsamiq wireframing, HTML, CSS, Javascript, User/Usability Testing',
+			link: 'FlexAble.html',
+			img: 'images/Projects/Web/FlexAbleLogo-01.png'
+		},
+		{
+			category: 'graphics',
+			name: 'Spaceship Earth',
+			startDate: 'April, 2015',
+			endDate: 'April, 2015',
+			description: 'Created line art in Illustrator based on photograph of Disney Epcot\'s Spaceship Earth, colored in Photoshop',
+			skillsUsed: 'Adobe Illustrator, Adobe Photoshop',
+			link: 'images/Projects/GraphicDesign/SpaceshipEarth.png',
+			img: 'images/Projects/GraphicDesign/SpaceshipEarth.png'
+		},
+		{
 			category: 'graphics',
 			name: 'My Apollo Debut Poster',
-			startDate: 'May 14, 2016',
-			endDate: 'May 17, 2016',
+			startDate: 'May, 2016',
+			endDate: 'May, 2016',
 			description: 'Commissioned to create poster for Fort Wayne band My Apollo\'s debut performance.',
 			skillsUsed: 'Adobe Illustrator, Adobe Photoshop',
-			link: 'https://www.facebook.com/myapolloofficial/photos/a.1785673638331860.1073741829.1781663952066162/1785672838331940/?type=3&theater',
+			link: 'images/Projects/GraphicDesign/StarBack.png',
 			img: 'images/Projects/GraphicDesign/StarBack.png'
 		},
 		{
 			category: 'graphics',
 			name: 'My Apollo @ CS3 Poster',
-			startDate: 'Aug 11, 2016',
-			endDate: 'Aug 14, 2016',
+			startDate: 'Aug, 2016',
+			endDate: 'Aug, 2016',
 			description: 'Commissioned to create poster for Fort Wayne band My Apollo.',
 			skillsUsed: 'Adobe Illustrator, Adobe Photoshop',
-			link: 'https://www.facebook.com/myapolloofficial/photos/a.1781664765399414.1073741827.1781663952066162/1822640307968526/?type=3&theater',
+			link: 'images/Projects/GraphicDesign/PopArt.png',
 			img: 'images/Projects/GraphicDesign/PopArt.png'
 		},
 		{
 			category: 'graphics',
 			name: 'My Apollo Middlewaves Poster',
-			startDate: 'June 26, 2017',
-			endDate: 'June 27, 2017',
+			startDate: 'June, 2017',
+			endDate: 'June, 2017',
 			description: 'Designed poster for My Apollo\'s first festival performance at the upcoming Middlewaves Music Festival.',
 			skillsUsed: 'Adobe Illustrator, Adobe Photoshop',
-			link: '#',
+			link: 'images/Projects/GraphicDesign/MAMiddlewaves.png',
 			img: 'images/Projects/GraphicDesign/MAMiddlewaves.png'
 		},
 		{
 			category: 'cad',
-			name: 'PLACEHOLDER CATIA PROJECT',
-			startDate: 'Dec 31, 2016',
-			endDate: 'Dec 34, 2016',
-			description: 'Make a fake CAD project in CATIA to prove this space works',
-			skillsUsed: 'Dassault CATIA v24',
-			link: '#',
-			img: 'images/Projects/CAD/PlaceholderCATIA.gif'
+			name: 'CATIA - Trumpet',
+			startDate: 'Oct, 2015',
+			endDate: 'Dec, 2015',
+			description: 'Created part and assembly models for a Trumpet in CATIA',
+			skillsUsed: 'Dassault CATIA v5',
+			link: 'images/Projects/CAD/TrumpetFinal.png',
+			img: 'images/Projects/CAD/TrumpetFinal.png'
 		},
 		{
 			category: 'cad',
-			name: 'PLACEHOLDER NX PROJECT',
-			startDate: 'Dec 31, 2016',
-			endDate: 'Dec 34, 2016',
-			description: 'I made a fake project in NX9 to prove this space loads properly. Hopefully a real one appears soon.',
-			skillsUsed: 'NX9',
-			link: '#',
-			img: 'images/Projects/CAD/PlaceholderNX.jpg'
+			name: 'NX Bank Vault',
+			startDate: 'March 2016',
+			endDate: 'March 2016',
+			description: 'Created part and assembly models for a Bank Vault Door mechanism in NX',
+			skillsUsed: 'Seimens NX 9',
+			link: 'images/Projects/CAD/BankVaultFinal.png',
+			img: 'images/Projects/CAD/BankVaultFinal.png'
+		},
+		{
+			category: 'cad',
+			name: 'CATIA - Roller',
+			startDate: 'March, 2017',
+			endDate: 'May, 2017',
+			description: 'Created part and assembly models based on given engineering drawings, complete with GD&T.',
+			skillsUsed: 'Dassault CATIA v5',
+			link: 'images/Projects/CAD/RollerFinal.png',
+			img: 'images/Projects/CAD/RollerFinal.png'
+		},
+		{
+			category: 'cad',
+			name: 'NX Engine',
+			startDate: 'April 2017',
+			endDate: 'April 2017',
+			description: 'Created part and assembly models for a simple engine block in NX, complete with GD&T. Also tested importing and exporting neutral file formats on this file.',
+			skillsUsed: 'Seimens NX 9',
+			link: 'images/Projects/CAD/EngineFinal.png',
+			img: 'images/Projects/CAD/EngineFinal.png'
 		}
 		];
 
@@ -167,12 +207,7 @@ app.controller('MainController', ['$scope', function($scope){
 		};
 
 		$scope.linkFilter = function(index){
-			if($scope.projects[index].category == "webdev"){
 				window.location.href = $scope.projects[index].link;
-			}
-			else{
-				$scope.modalExpand(index);
-			}
 		}
 
 		$scope.animate = function(){

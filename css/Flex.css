@@ -76,11 +76,17 @@ td{
 	padding-bottom: 25px;
 }
 .sideBlock{
+	/*
 	display: inline-block;
 	float: left;
 	width: 33%;
-	margin-left: 8.5%;
-	margin-right: 8.5%;
+	*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	margin: 0 8.5% 3% 8.5%;
 
 }
 .contentBlock{
@@ -92,8 +98,8 @@ td{
 	margin-top: 25px;
 }
 .teamPic{
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	box-shadow: 0 5px 15px black;
 }
 .centerPicLandscape{
@@ -146,6 +152,12 @@ td{
 	margin: auto;
 	margin-bottom: 25px;
 }
+.ideaText{
+	font-size: 14pt;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
 .ideaDoodle{
 	width: 30%;
 	float-left;
@@ -154,20 +166,30 @@ td{
 	box-shadow: 0 5px 15px black;
 }
 .linkUp{
-	width: 300px;
+	width: 100%;
 	box-shadow: 0 5px 15px black;
 	margin: auto;
 }
 #linkUpTable{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
 	margin: auto;
 	margin-bottom: 25px;
 }
 .eLevelsPic{
-	width: 200px;
+	width: 100%;
 	box-shadow: 0 5px 15px black;
 	margin: auto;
 }
 .eLevelsTable{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
 	margin: auto;
 	margin-bottom: 25px;
 }
@@ -177,20 +199,27 @@ td{
 	margin: auto;
 }
 #SSTable{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
 	margin: auto;
 	margin-bottom: 25px;
 }
 .SSPic{
-	width: 275px;
-	height: 200px;
+	width: 100%;
 	box-shadow: 0 5px 15px black;
 }
-.wireframePic{
-	width: 250px;
+.protoTable{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
 }
 .protoPic{
-	width: 250px;
-	height: 500px;
+	width: 100%;
 	box-shadow: 0 5px 15px black;
 }
 #feedbackUL{
@@ -237,15 +266,22 @@ td{
 
 #slider ul li {
   position: relative;
-  display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
   float: left;
   margin: 0;
   padding: 0;
-  width: 500px;
+  width: 450px;
   height: 508px;
   background: white;
   text-align: center;
   line-height: 300px;
+}
+.wireframePic{
+	width: 250px;
 }
 
 button.control_prev, button.control_next {
@@ -284,4 +320,42 @@ button.control_next {
   margin: 10px auto;
   width: 160px;
   font-size: 18px;
+}
+
+@media (max-width: 768px){
+	.teamPic{
+		width: 100px;
+		height: 100px;
+	}
+	#problemStatement{
+		width: 90%;
+		padding: 20px 0 20px 0;
+	}
+	.ideaText{
+		width: 100%;
+	}
+	#slider ul li {
+	  position: relative;
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-around;
+	  align-content: center;
+	  align-items: center;
+	  float: left;
+	  margin: 0;
+	  padding: 0;
+	  width: 400px;
+	  height: 508px;
+	  background: white;
+	  text-align: center;
+	  line-height: 300px;
+	}
+	.wireframePic{
+		width: 50%;
+	}
+	.picRight{
+		margin: 25px auto;
+		float: left;
+		width: 100%;
+	}
 }

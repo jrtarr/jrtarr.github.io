@@ -6,7 +6,7 @@ app.controller('MainController', ['$scope', function($scope){
 		{
 			category: 'webdev',
 			name: 'The B45s',
-			startDate: 'Dec 2015',
+			startDate: 'Dec, 2015',
 			endDate: 'Ongoing',
 			description: 'Designed, created, and maintained website for Fort Wayne rock band, the B45s.',
 			skillsUsed: 'HTML, CSS, Bootstrap',
@@ -16,7 +16,7 @@ app.controller('MainController', ['$scope', function($scope){
 		{
 			category: 'webdev',
 			name: 'Execuwell',
-			startDate: 'Jan 2016',
+			startDate: 'Sept, 2016',
 			endDate: 'Ongoing',
 			description: 'Designed, created, and maintained website for Indianapolis-area wellness consultancy, Execuwell.',
 			skillsUsed: 'HTML, CSS, Javascript, JQuery, Bootstrap',
@@ -26,7 +26,7 @@ app.controller('MainController', ['$scope', function($scope){
 		{
 			category: 'webdev',
 			name: 'FlexAble',
-			startDate: 'March 2017',
+			startDate: 'March, 2017',
 			endDate: 'May 2017',
 			description: 'Developed app idea from problem identification up to functional wireframing to practice understanding user needs, idea formulation techniques, and basic UX principles.',
 			skillsUsed: 'Affinity Diagramming, Persona/Scenario Building, Sketching, UX Design, Balsamiq wireframing, HTML, CSS, Javascript, User/Usability Testing',
@@ -136,6 +136,11 @@ app.controller('MainController', ['$scope', function($scope){
 			name: 'github',
 			iFrame: 'fa fa-github',
 			link: 'https://github.com/jrtarr'
+		},
+		{
+			name: 'deviantArt',
+			iFrame: 'fa fa-deviantart',
+			link: 'https://jrt1025.deviantart.com'
 		}
 		];
 		/*--------------Functions--------------*/

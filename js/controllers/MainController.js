@@ -34,6 +34,16 @@ app.controller('MainController', ['$scope', function($scope){
 			img: 'images/Projects/Web/FlexAbleLogo-01.png'
 		},
 		{
+			category: 'webdev',
+			name: 'South Side Alumni Association',
+			startDate: 'July, 2017',
+			endDate: 'Ongoing',
+			description: 'Designed complete site overhaul of Fort Wayne South Side High School\'s alumni association. Built site using Wordpress to give board members access and control over site content.',
+			skillsUsed: 'Wordpress, CSS, Javascript',
+			link: 'http://archersalumni.com',
+			img: 'images/Projects/Web/logoClean-01.png'
+		},
+		{
 			category: 'graphics',
 			name: 'Spaceship Earth',
 			startDate: 'April, 2015',

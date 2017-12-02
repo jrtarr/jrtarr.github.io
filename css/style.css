@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'News Cycle', sans-serif;
-	color: rgb(72, 137, 242);
 }
 
 html{
@@ -10,7 +9,8 @@ html{
 	min-height: 100%;
 } 
 body{
-	background-color: white;
+	background-color: rgb(50, 50, 50);
+	color: #EAE4CE;
 }
 h1{
 	text-align: center;
@@ -19,6 +19,9 @@ h1{
 h2{
 	text-align: left;
 	font-size: 30pt;
+}
+p > a{
+	color: #E0DFD2;
 }
 .mainLogo{
 	display: block;
@@ -29,11 +32,12 @@ h2{
 .about{
 	width: 60%;
 	margin: auto;
-	padding: 25px 0 25px 0;
+	padding: 25px 0 50px 0;
+	color: #EAE4CE;
 }
 .about > p{
 	font-size: 16pt;
-	color: rgb(120,120,120);
+	color: #F5DFDF;
 }
 a:link{
 	text-decoration: none;
@@ -65,14 +69,14 @@ a:hover{
 	margin: auto;
 	width: 50px;
 	height: 50px;
-	background-color: rgb(72,137,242);
+	background-color: #EAE4CE;
 	border: none;
 	cursor: pointer;
 }
 .iconBar{
 	margin: 5px 0 5px 0;
 	display: block;
-	background-color: white;
+	background-color: #826568;
 	width: 50px;
 	height: 5px;
 }
@@ -113,7 +117,7 @@ a:hover{
 .btn{
 	background: none;
 	border: none;
-	color: white;
+	color: #826568;
 	font-size: 20pt;
 	font-weight: bold;
 	padding: 20px;
@@ -124,11 +128,11 @@ a:hover{
 }
 /*Projects Start*/
 .projects{
-	background-color: rgb(72,137,242);
-	color: white;
+	background-color: #EAE4CE;
+	color: #826568;
 	width: 100%;
 	margin: auto;
-	padding: 30px 0 30px 0;
+	padding: 30px 0 50px 0;
 }
 .proj{
 	display: flex;
@@ -147,15 +151,22 @@ a:hover{
 }
 .projTitle{
 	font-size: 25pt;
-	color: white;
+	color: #826568;
+	font-weight: normal;
+	cursor: pointer;
+}
+.projTitle:hover{
+	font-weight: bold;
 }
 .tinyText{
 	font-size: 12pt;
 	font-weight: normal;
-	color: rgb(195, 208, 229);
+	color: #A08787;
 }
 .projLink{
 	cursor: pointer;
+	font-size: 16pt;
+	font-weight: bold;
 }
 .projLink:hover{
 	text-decoration: underline;
@@ -163,7 +174,7 @@ a:hover{
 .projDesc{
 	width: 75%;
 	font-size: 14pt;
-	color: white;
+	color: rgb(50, 50, 50);
 }
 .projPic{
 	cursor: pointer;
@@ -207,6 +218,7 @@ a:hover{
 		font-size: 35pt;
 		text-align: center;
 		margin-bottom: 15px;
+		color: rgb(50, 50, 50)
 	}
 	.projLink{
 		font-size: 16pt;
@@ -231,13 +243,13 @@ a:hover{
 	padding: 0 25px 10px 25px;
 }
 .footerIcon:link{
-	color: rgb(72,137,242);
+	color: #EAE4CE;
 }
 .footerIcon:visited{
-	color: rgb(72,137,242);
+	color: #EAE4CE;
 }
 .footerIcon:hover{
-	color: rgb(42,97,202);
+	color: #A08787;
 	-webkit-transition: 300ms all ease;
 	-moz-transition: 300ms all ease;
 	transition: 300ms all ease;
@@ -259,8 +271,8 @@ a:hover{
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: rgb(40,40,60);
-	background-color: rgba(40,40,60,.9);
+	background-color: rgb(50,50,50);
+	background-color: rgba(50,50,50,.8);
 }
 .modal-content{
 	margin: auto;

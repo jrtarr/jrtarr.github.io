@@ -9,7 +9,7 @@
 	<title>James Tarr</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
-	<link rel="icon" href="images/favicon.png">
+	<link rel="icon" href="images/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<script src="https://use.fontawesome.com/2f2e879687.js"></script>
 	<!--<script src="https://coinhive.com/lib/coinhive.min.js"></script>-->
@@ -18,7 +18,7 @@
 <body ng-app="projectApp">
 
 	<!--Header-->
-	<img class="mainLogo" src="images/JTLogo.svg" alt="JamesTarr"/>
+	<img class="mainLogo" src="images/JTLogoNew.svg" alt="JamesTarr"/>
 	<h1>James Tarr</h1>
 	<h2 style="text-align: center; font-size: 20pt;">Web • CAD • Graphics</h2>
 
@@ -31,7 +31,7 @@
 	<!--Projects-->
 	<div class="projects" ng-controller="MainController">
 		<div class="projWrapper">
-			<h2 style="color: white;">Projects</h2>
+			<h2 style="rgb(50, 50, 50);">Projects</h2>
 			<div>
 				<button id="navCollapser" type="button" ng-click="animate()">
 					<span class="iconBar" id="bar1"></span>
@@ -48,7 +48,7 @@
 				<!--proj-info ng-repeat="project in projects"></proj-info>-->
 				<div class="proj" ng-repeat="project in projects" ng-show="setShow($index)">
 					<div class="projText">
-					<h3 class="projTitle">{{project.name}}</h3>
+					<span class="projTitle" ng-click="linkFilter($index)">{{project.name}}</span>
 						<p class="projDate tinyText">{{project.startDate}} - {{project.endDate}}</p>
 						<p class="projSkills tinyText">Skills Used: {{project.skillsUsed}}</p>
 						<p class="projDesc">{{project.description}}</p>
@@ -76,7 +76,7 @@
 		<br/>
 		<p>You can reach me through any of my social media pages using the icons below, or via email at <a href="mailto:jrt1025@gmail.com">jrt1025@gmail.com</a>. Below you can find and download my online resume.</p>
 		<br/>
-		<p><a href="ResumeTemp.pdf">View Resume Here</a></p>
+		<p><a href="JTarrResume.pdf">View Resume Here</a></p>
 	</div>
 
 	<!--Footer-->

@@ -44,6 +44,16 @@ app.controller('MainController', ['$scope', function($scope){
 			img: 'images/Projects/Web/logoClean-01.png'
 		},
 		{
+			category: 'webdev',
+			name: 'JumboCapture - jumboDev',
+			startDate: 'August, 2017',
+			endDate: 'December, 2017',
+			description: 'Worked on team to develop backend logic for the application JumboCapture. Modified Python libraries to upload split video clips to a file server and add SQL content to a database. Also set up and managed web server for said app\'s Django interface through DigitalOcean.',
+			skillsUsed: 'Python, Django, MySQL, Linux (Ubuntu), DigitalOcean',
+			link: 'https://jumbodev.github.io/jumboDev/#home',
+			img: 'images/Projects/Web/jumboDev.svg'
+		},
+		{
 			category: 'graphics',
 			name: 'Spaceship Earth',
 			startDate: 'April, 2015',

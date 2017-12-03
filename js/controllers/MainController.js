@@ -94,6 +94,16 @@ app.controller('MainController', ['$scope', function($scope){
 			img: 'images/Projects/GraphicDesign/MAMiddlewaves.png'
 		},
 		{
+			category: 'graphics',
+			name: 'City Mist Album Cover',
+			startDate: 'April, 2017',
+			endDate: 'November, 2017',
+			description: 'Designed album artwork for my personal band, City Mist\'s newest album, Curtain Call.',
+			skillsUsed: 'Adobe Illustrator, Adobe Photoshop',
+			link: 'http://citymist.bandcamp.com/',
+			img: 'images/Projects/GraphicDesign/FINALCOVER.png'
+		},
+		{
 			category: 'cad',
 			name: 'CATIA - Trumpet',
 			startDate: 'Oct, 2015',

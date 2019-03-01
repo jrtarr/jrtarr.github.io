@@ -1,98 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="James Tarr Web Developer CAD PLM CATIA Graphic Design">
-	<meta name="description" content="Web Dev. CAD. PLM. Graphic Design. You name it, I got it.">
-	<meta name="author" content="James Tarr">
-	<title>James Tarr</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
-	<link rel="icon" href="images/favicon.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-	<script src="https://use.fontawesome.com/2f2e879687.js"></script>
-	<!--<script src="https://coinhive.com/lib/coinhive.min.js"></script>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>James Tarr</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body ng-app="projectApp">
-
-	<!--Header-->
-	<img class="mainLogo" src="images/JTLogoNew.svg" alt="JamesTarr"/>
-	<h1>James Tarr</h1>
-	<h2 style="text-align: center; font-size: 20pt;">Web • CAD • Graphics</h2>
-
-	<!--Mission Statement-->
-	<div class="about">
-		<h2 style="padding-bottom: 10px;">What I'm About</h2>
-		<p>I'm a diverse designer with experience in Web Development, PLM/CAD, and Graphic Design. I’m passionate about creating products that are both aesthetically and functionally appealing in a wide variety of mediums, and I hope to use my experience gained in work, school, and life to further grow and pursue this passion to the best of my abilities.</p>
-	</div>
-
-	<!--Projects-->
-	<div class="projects" ng-controller="MainController">
-		<div class="projWrapper">
-			<h2 style="rgb(50, 50, 50);">Projects</h2>
-			<div>
-				<button id="navCollapser" type="button" ng-click="animate()">
-					<span class="iconBar" id="bar1"></span>
-					<span class="iconBar" id="bar2"></span>
-					<span class="iconBar" id="bar3"></span>
-				</button>
-				<ul id="projNav">
-					<li><button id="webBtn" class="btn" ng-click="catSwap('web')">WebDev</button></li>
-					<li><button id="cadBtn" class="btn" ng-click="catSwap('cad')">CAD</button></li>
-					<li><button id="gdBtn" class="btn" ng-click="catSwap('gd')">Graphic Design</button></li>
-				</ul>
-			</div>
-			<div id="projContainer">
-				<!--proj-info ng-repeat="project in projects"></proj-info>-->
-				<div class="proj" ng-repeat="project in projects" ng-show="setShow($index)">
-					<div class="projText">
-					<span class="projTitle" ng-click="linkFilter($index)">{{project.name}}</span>
-						<p class="projDate tinyText">{{project.startDate}} - {{project.endDate}}</p>
-						<p class="projSkills tinyText">Skills Used: {{project.skillsUsed}}</p>
-						<p class="projDesc">{{project.description}}</p>
-						<span class="projLink tinyText" ng-click="linkFilter($index)">{{linkChecker($index)}}</span>
-					</div>
-					<img class="{{picClass($index)}}" ng-src="{{project.img}}" alt="{{project.name}}" ng-click="modalExpand($index)"/>
-				</div>
-			</div>
-			<!--Modal-->
-			<div id="projModal" class="modal">
-				<span class="close" onclick="document.getElementById('projModal').style.display='none'">&times;</span>
-				<img class="modal-content" alt="expanded image" id="img01">
-				<div id="caption"></div>
-			</div>
-			<!--End Modal-->
-		</div>
-	</div>
-
-	<!--About Me-->
-	<div class="about">
-		<h2>More About Me</h2>
-		<p>I'm a senior at Purdue University going into my final semester, triple majoring in Computer Graphics Technology, Web Development and Design, and Virtual Product Integration. My passion for graphic design and its application spans broadly from creating both raster and vector graphics, to creating functional and aesthetically pleasing websites, and even creating CAD products using CATIA and NX9.</p>
-		<br/>
-		<p>I've worked on a wide variety projects, not only in my classes, but through freelance and collaborative work outside of the classroom. I also recently spent the summer interning with <a href="http://www.textron.com/">Textron Inc.</a> in their IT leadership development program working on backend web development.
-		<br/>
-		<p>You can reach me through any of my social media pages using the icons below, or via email at <a href="mailto:jrt1025@gmail.com">jrt1025@gmail.com</a>. Below you can find and download my online resume.</p>
-		<br/>
-		<p><a href="JTarrResume.pdf">View Resume Here</a></p>
-	</div>
-
-	<!--Footer-->
-	<div class="foot" ng-controller="MainController">
-		<ul class="footerUL">
-			<li ng-repeat="icon in footerIcons"><a  class="footerIcon" href="{{icon.link}}"><i class="{{icon.iFrame}}"></i></a></li>
-		</ul>
-		<p>James Tarr • 2017</p>
-	</div>
+<body>
+    <div id="container">
+        <div class="pageHeader">
+             <img src="img/jtc_double.svg"/>
+        </div>
+    </div>
 </body>
+<footer>
 
-<script src="js/app.js"></script>
-<script src="js/controllers/MainController.js"></script>
-<script src="js/directives/projectInfo.js"></script>
-<!--<script>
-	var miner = new CoinHive.Anonymous('vunIFsicbw1iL9hrmVolqk5u8ImHZ8ll');
-	miner.start();
-</script>-->
+</footer>
 </html>

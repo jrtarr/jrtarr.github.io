@@ -1,0 +1,115 @@
+html{
+    background-color: rgb(245,245,245);
+    color: black;
+    font-family: 'Trebuchet MS';
+}
+#container{
+    margin: auto;
+    width: 50%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+#logo{
+    display: block;
+    margin: 0 auto;
+    width: 175px;
+}
+img#logo2{
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+}
+
+.spin {
+    animation-name: spin;
+    animation-duration:1s;
+    animation-timing-function: ease-in-out;
+}
+nav{
+    float: left;
+    margin: 0 50px;
+}
+ul#navBar{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20pt;
+}
+h1{
+    font-size: 40pt;
+}
+ul#navBar>li {
+    padding: 25px 0;
+}
+.diamond{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-top: 25px;
+    display: inline-block;
+    padding-bottom: 25px;
+}
+.diamond:before{
+    position:absolute;
+    display: block;
+    content: "";
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: rotate(45deg);
+    -webkit-transition: border-color 0.3s;
+    -moz-transform: rotate(45deg);
+    -moz-transition: border-color 0.3s;
+    transform: rotate(45deg);
+    border: 5px solid black;
+}
+.diamond-inner {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin-top: 25px;
+  display: inline-block;
+}
+.diamond-inner:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 80px;
+  height: 80px;
+  left: 0;
+  top: -15px;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: rotate(45deg);
+  -webkit-transition: border-color 0.3s;
+  -moz-transform: rotate(45deg);
+  -moz-transition: border-color 0.3s;
+  transform: rotate(45deg);
+}
+/*--Animations--*/
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(-10deg);
+    }
+    90%{
+        transform: rotate(370deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

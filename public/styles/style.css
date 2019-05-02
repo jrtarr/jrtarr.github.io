@@ -83,9 +83,9 @@ h2,h3{
 }
 /*About Me*/
 #about-me-container{
-    background: url(../img/aboutme.jpg) no-repeat fixed;
+    background: url('../img/aboutme.jpg') no-repeat fixed;
     background-size: cover;
-    background-position: bottom center;
+    background-position: center bottom;
     padding: 25px 0;
 }
 #about-me-container>h3,#about-me>p,#about-me>p>a{
@@ -137,9 +137,9 @@ h2,h3{
 }
 /*Contact*/
 #contact-container{
-    background: url('../img/contact2.jpg') no-repeat fixed;
+    background: url('../img/contact.jpg') no-repeat fixed;
     background-position: bottom center;
-    background-size: 100% auto;
+    background-size: contain;
     height: 325px;
 }
 #contact-container>h3{

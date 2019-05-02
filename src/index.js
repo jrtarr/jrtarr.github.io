@@ -1,21 +1,20 @@
 //Main page controllers live here
-import { renderText,renderFooter } from "./views";
+import { renderPage } from "./views";
 
 // const nav = document.querySelector('nav')
 // const navButton = document.querySelector('#nav-menu')
 // const navList = document.querySelector('#nav-list')
 const themeButtons = document.querySelectorAll('.theme-button')
 let theme = 'Web'
-renderText()
-renderFooter()
+renderPage(theme)
 
 themeButtons.forEach((button)=>{
     button.addEventListener('click',(e)=>{
         themeButtons.forEach((button)=>{
             button.classList.toggle('active')
         })
-        theme = e.target.value
-        console.log(theme)
+        theme = e.target.textContent
+        renderPage(theme)
     })
 })
 

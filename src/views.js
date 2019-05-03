@@ -26,10 +26,10 @@ function renderProjects(theme){
     const container = document.querySelector('#projects')
     container.innerHTML = ''
     if(theme === 'Web'){
-        const projects = content.projects
+        const projects = content.projects.web
         projects.forEach((project)=>{
             const projParent = document.createElement('div')
-            projParent.classList.add('grid-container','text-content')
+            projParent.classList.add('web-container','text-content')
 
             const title = document.createElement('h4')
             title.classList.add('proj-title')
@@ -38,7 +38,7 @@ function renderProjects(theme){
             link.classList.add('proj-link')
 
             const icon = document.createElement('img')
-            icon.classList.add('proj-img')
+            icon.classList.add('proj-ico')
 
             const description = document.createElement('p')
             description.classList.add('proj-desc')
@@ -62,10 +62,30 @@ function renderProjects(theme){
             container.appendChild(projParent)
         })
     }else{
-        const sliderBox = document.createElement('div')
-        sliderBox.classList.add('slider-box')
+        const projects = content.projects.graphic
+        projects.forEach((project)=>{
+            const projParent = document.createElement('div')
+            projParent.classList.add('graphic-container','text-content')
 
-        container.appendChild(sliderBox)
+            const title = document.createElement('h4')
+            title.classList.add('proj-title')
+
+            const image = document.createElement('img')
+            image.classList.add('proj-img')
+
+            const description = document.createElement('p')
+            description.classList.add('proj-desc')
+
+            //Adding content from project
+            title.textContent = project.name
+            description.textContent = project.description
+            image.src = project.imagePath
+
+            projParent.appendChild(title)
+            projParent.appendChild(description)
+            projParent.appendChild(image)
+            container.appendChild(projParent)
+        })
     }
 }
 
@@ -91,5 +111,4 @@ function renderFooter(){
         socialContainer.appendChild(iconLi)
     })
 }
-
 export { renderPage }

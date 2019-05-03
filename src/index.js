@@ -5,7 +5,7 @@ import { renderPage } from "./views";
 // const navButton = document.querySelector('#nav-menu')
 // const navList = document.querySelector('#nav-list')
 const themeButtons = document.querySelectorAll('.theme-button')
-let theme = 'Graphic'
+let theme = 'Web'
 renderPage(theme)
 
 themeButtons.forEach((button)=>{

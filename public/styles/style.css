@@ -105,22 +105,35 @@ h2,h3{
     text-decoration: none;
 }
 /*Projects*/
-.grid-container{
+.web-container{
     display: grid;
     grid-template-columns: 35px 15px 700px;
     grid-template-rows: auto auto auto auto;
     grid-template-areas:
         "ico title title"
         ". skills skills"
-        ". . desc"
+        ". desc desc"
         ". link link";
     grid-gap: 5px 20px;
     align-items: center;
     margin: 40px auto;
 }
-.proj-img{
+.graphic-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    margin: 40px auto;
+}
+.proj-ico{
     height: 20px;
     grid-area: ico;
+}
+.proj-img{
+    grid-area: ico;
+    width: 400px;
 }
 .proj-title{
     grid-area: title;
@@ -151,8 +164,8 @@ h2,h3{
 /*Contact*/
 #contact-container{
     background: url('../img/contact.jpg') no-repeat fixed;
-    background-position: bottom center;
-    background-size: contain;
+    background-position: right center;
+    background-size: cover;
     height: 375px;
 }
 #contact-container>h3{
@@ -189,4 +202,38 @@ footer>p{
 }
 #social>li>a:hover{
     background: #e5e5e5;
+}
+/* Media Queries */
+
+@media only screen and (max-width : 350px) {
+    /* Styles */
+    .text-content{
+        width: 90%;
+    }
+    .container{
+        width: 90%;
+    }
+    .web-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "ico title title"
+            "skills skills ."
+            "desc desc desc"
+            "link link .";
+        grid-gap: 5px 20px;
+        align-items: center;
+        margin: 40px auto;
+
+    }
+    .proj-img{
+        width: 100%;
+    }
+    #contact-container{
+        background: red;
+        background-position: right center;
+        background-size: cover;
+        height: 375px;
+    }
 }

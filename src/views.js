@@ -30,17 +30,25 @@ function renderProjects(theme){
         projects.forEach((project)=>{
             const projParent = document.createElement('div')
             projParent.classList.add('grid-container','text-content')
+
             const title = document.createElement('h4')
             title.classList.add('proj-title')
+
             const link = document.createElement('a')
             link.classList.add('proj-link')
+
             const icon = document.createElement('img')
             icon.classList.add('proj-img')
+
             const description = document.createElement('p')
             description.classList.add('proj-desc')
 
+            const skills = document.createElement('i')
+            skills.classList.add('proj-skills')
+
             //Adding content from project
             title.textContent = project.name
+            skills.textContent = project.skills
             link.href = project.url
             link.innerHTML = 'Check it out!'
             icon.src = project.iconPath
@@ -48,12 +56,16 @@ function renderProjects(theme){
 
             projParent.appendChild(icon)
             projParent.appendChild(title)
+            projParent.appendChild(skills)
             projParent.appendChild(description)
             projParent.appendChild(link)
             container.appendChild(projParent)
         })
     }else{
-        
+        const sliderBox = document.createElement('div')
+        sliderBox.classList.add('slider-box')
+
+        container.appendChild(sliderBox)
     }
 }
 

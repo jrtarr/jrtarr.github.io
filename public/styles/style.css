@@ -13,7 +13,6 @@ body{
     margin-bottom: 75px;
 }
 
-
 h1,h2,h3{
     margin: 0 auto;
 }
@@ -24,7 +23,7 @@ h2{
 h3{
     width: 60%;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 h4{
     margin: 0;
@@ -51,7 +50,7 @@ h2,h3{
     margin-top: 15px;
 }
 #site-toggle{
-    margin: 15px 0;
+    margin: 15px auto;
 }
 .theme-button{
     text-align: center;
@@ -109,14 +108,15 @@ h2,h3{
 .grid-container{
     display: grid;
     grid-template-columns: 35px 15px 700px;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
         "ico title title"
+        ". skills skills"
         ". . desc"
         ". link link";
     grid-gap: 5px 20px;
     align-items: center;
-    margin: 25px auto;
+    margin: 40px auto;
 }
 .proj-img{
     height: 20px;
@@ -124,7 +124,7 @@ h2,h3{
 }
 .proj-title{
     grid-area: title;
-    font-size: 1.1em;
+    font-size: 1.4em;
 }
 .proj-desc{
     grid-area: desc;
@@ -135,12 +135,25 @@ h2,h3{
     grid-area: link;
     width: 100px;
 }
+.proj-skills{
+    grid-area: skills;
+    font-size: .8em;
+}
+
+/* Image Slider */
+.slider-box{
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    border: 3px solid black;
+}
+
 /*Contact*/
 #contact-container{
     background: url('../img/contact.jpg') no-repeat fixed;
     background-position: bottom center;
     background-size: contain;
-    height: 325px;
+    height: 375px;
 }
 #contact-container>h3{
     padding-top: 25px;

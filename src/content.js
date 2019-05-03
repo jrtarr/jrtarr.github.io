@@ -6,26 +6,44 @@ export default content =  {
     projects:[
         {
             name: 'Hangman',
+            skills: 'Javascript, HTML, CSS',
             url: 'https://jtarr-hangman.netlify.com/',
             description: 'Hangman game built in Javascript using Andrew Mead\'s puzzle generator API to retrieve puzzles.',
             iconPath: 'img/projects/Hangman.png'
         },
         {
             name: 'Notes App',
+            skills: 'Javascript, HTML, CSS',
             url: 'https://jrtarr-notes-app.netlify.com/',
             description: 'Simple note-taking application built using Javascript. Stores notes to local storage.',
             iconPath: 'img/projects/Notes.png'
         },
         {
             name: 'ToDo App',
+            skills: 'Javascript, HTML, CSS',
             url: 'https://jtarr-todos.netlify.com/',
             description: 'Javascript application that stores list of To-Dos to local storage.',
             iconPath: 'img/projects/ToDo.png'
+        },,
+        {
+            name: 'Archers Alumni',
+            skills: 'Wordpress, HTML, CSS',
+            url: 'http://archersalumni.com',
+            description: 'Designed site overhaul of Fort Wayne\'s South Side High School alumni association. Built site using Wordpress to give board members easy access to post content.',
+            iconPath: 'img/projects/sshs.png'
+        },
+        {
+            name: 'Execuwell/Excellwell',
+            skills: 'Javascript, jQuery, HTML, CSS',
+            url: 'https://execuwell.com',
+            description: 'Designed, created, and maintain website for Indianapolis-area wellness consultancy, Execuwell.',
+            iconPath: 'img/projects/execuwell.png'
         },
         {
             name: 'Farrow Records',
+            skills: 'Javascript, HTML, CSS, AngularJS',
             url: '#',
-            description: 'Mock website for a record label built using HTML, CSS, and some Angular. Featuring my own personal band along with some friends!',
+            description: 'Mock website for a record label built primarily using HTML, CSS, and a little bit of AngularJS. Featuring my own personal band along with some friends!',
             iconPath: 'img/projects/Farrow.png'
         }
     ],

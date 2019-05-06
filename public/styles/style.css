@@ -164,12 +164,16 @@ h2,h3{
 /*Contact*/
 #contact-container{
     background: url('../img/contact.jpg') no-repeat fixed;
-    background-position: right center;
-    background-size: cover;
-    height: 375px;
+    background-position: bottom;
+    background-size: 100%;
+    height: 300px;
+    padding-top: 15px;
 }
-#contact-container>h3{
-    padding-top: 25px;
+#contact-container>h3,#contact-container>p{
+    margin-top: 20px;
+    color: #f2f2f2;
+}
+#contact-container>p>a{
     color: #f2f2f2;
 }
 /*Footer*/
@@ -205,13 +209,16 @@ footer>p{
 }
 /* Media Queries */
 
-@media only screen and (max-width : 350px) {
+@media only screen and (max-width : 812px) {
     /* Styles */
     .text-content{
         width: 90%;
     }
-    .container{
+    h3{
         width: 90%;
+    }
+    .container{
+        width: 100%;
     }
     .web-container{
         display: grid;
@@ -231,9 +238,10 @@ footer>p{
         width: 100%;
     }
     #contact-container{
-        background: red;
-        background-position: right center;
+        background: url('../img/contact.jpg') no-repeat fixed;
+        background-position: bottom;
         background-size: cover;
-        height: 375px;
+        height: 300px;
+        padding-top: 15px;
     }
 }

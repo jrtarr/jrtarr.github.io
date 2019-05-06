@@ -10,7 +10,7 @@ function renderPage(theme){
 }
 
 function renderAbout(){
-    const aboutContainer = document.querySelector('#about-me')
+    const aboutContainer = document.body.querySelector('#about-me')
     const aboutMe = content.textContent.aboutMe
     aboutContainer.innerHTML = ''
 

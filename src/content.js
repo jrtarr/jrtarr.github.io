@@ -1,5 +1,5 @@
 //Home of Content to be Loaded
-export default content =  {
+const content =  {
     textContent: {
         aboutMe: ['I\'m a Purdue University graduate with a triple major in Computer Graphics Technology, Web Development and Design, and Virtual Product Integration. My passion for web and graphic design spans broadly from creating both raster and vector graphics, to creating functional and aesthetically pleasing websites, and even creating CAD products using CATIA and NX9.','<br/>I\'ve worked on a wide variety projects including site design, web app support, and graphic design. I\'ve interned with <a href="https://www.textron.com/">Textron Inc.</a> in their IT leadership development program working on backend web development, and most recently worked at <a href="https://www.epic.com/">Epic Systems</a> to support MyChart - a .NET based web application that patients use to view their medical information.','Feel free to check out my resume below to learn more about my professional credentials!','<div id="resume-button"><a href="JTarrResume.pdf">My Resume</a></div>']
     },
@@ -25,7 +25,7 @@ export default content =  {
                 url: 'https://jtarr-todos.netlify.com/',
                 description: 'Javascript application that stores list of To-Dos to local storage.',
                 iconPath: 'img/projects/ToDo.png'
-            },,
+            },
             {
                 name: 'Archers Alumni',
                 skills: 'Wordpress, HTML, CSS',
@@ -90,3 +90,5 @@ export default content =  {
         }
     ]
 }
+
+export {content as default}

@@ -45,12 +45,12 @@ const content =  {
             {
                 name: 'The Outliers - Nashville',
                 description: 'Logo and merch designs for Nasvhille band The Outliers..',
-                imagePath: 'img/projects/theOutliers.png'
+                imagePath: 'img/projects/theOutliers.jpg'
             },
             {
                 name: 'Spuly G',
                 description: 'Album art and logo designs for Fort Wayne musician Spuly G.',
-                imagePath: 'img/projects/spulyG.png'
+                imagePath: 'img/projects/spulyG.jpg'
             },
             {
                 name: 'My Apollo',

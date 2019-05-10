@@ -20,11 +20,11 @@ const content =  {
                 iconPath: 'img/projects/Notes.png'
             },
             {
-                name: 'ToDo App',
-                skills: 'Javascript, HTML, CSS',
-                url: 'https://jtarr-todos.netlify.com/',
-                description: 'Javascript application that stores list of To-Dos to local storage.',
-                iconPath: 'img/projects/ToDo.png'
+                name: 'Benjamin Tarr',
+                skills: 'Javascript + MomentJS, HTML, CSS',
+                url: 'https://www.benjamintarr.com',
+                description: 'Web site for LA musician Benjamin Tarr, currently featuring coundown timer built with MomentJS to the release of his new album.',
+                iconPath: 'img/projects/benTarr.png'
             },
             {
                 name: 'Archers Alumni',

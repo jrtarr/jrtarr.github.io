@@ -1,10 +1,17 @@
 //Home of Content to be Loaded
 const content =  {
     textContent: {
-        aboutMe: ['I\'m a Purdue University graduate with a triple major in Computer Graphics Technology, Web Development and Design, and Virtual Product Integration. My passion for web and graphic design spans broadly from creating both raster and vector graphics, to creating functional and aesthetically pleasing websites, and even creating CAD products using CATIA and NX9.','<br/>I\'ve worked on a wide variety projects including site design, web app support, and graphic design. I\'ve interned with <a href="https://www.textron.com/">Textron Inc.</a> in their IT leadership development program working on backend web development, and most recently worked at <a href="https://www.epic.com/">Epic Systems</a> to support MyChart - a .NET based web application that patients use to view their medical information.','Feel free to check out my resume below to learn more about my professional credentials!','<div id="resume-button"><a href="JTarrResume.pdf">My Resume</a></div>']
+        aboutMe: ['I\'m a Purdue University graduate with a triple major in Computer Graphics Technology, Web Development and Design, and Virtual Product Integration. My passion for web and graphic design spans broadly from creating both raster and vector graphics, to creating functional and aesthetically pleasing websites, and even creating CAD products using CATIA and NX9.','<br/>I\'ve worked on a wide variety projects including site design, web app support, and graphic design. I\'ve interned with <a href="https://www.textron.com/">Textron Inc.</a> in their IT leadership development program working on backend web development, and previously worked at <a href="https://www.epic.com/">Epic Systems</a> supporting their web and mobile-based patient portal application MyChart','Currently I work as a software engineer at <a href="https://ati.co">ATI</a> in Fort Wayne.','<br/>Feel free to check out my resume below to learn more about my professional credentials!','<div id="resume-button"><a href="JTarrResume.pdf">My Resume</a></div>']
     },
     projects: {
         web: [
+            {
+                name: 'Word:Clock',
+                skills: 'Javascript + MomentJs, HTML, CSS',
+                url: 'https://jrtarr-wordclock.netlify.com',
+                description: 'A clock that highlights specific letters in a grid of letters to spell out the time.',
+                iconPath: 'img/projects/wordclock.png'
+            },
             {
                 name: 'Hangman',
                 skills: 'Javascript, HTML, CSS',
@@ -20,13 +27,6 @@ const content =  {
                 iconPath: 'img/projects/Notes.png'
             },
             {
-                name: 'Benjamin Tarr',
-                skills: 'Javascript + MomentJS, HTML, CSS',
-                url: 'https://www.benjamintarr.com',
-                description: 'Web site for LA musician Benjamin Tarr, currently featuring coundown timer built with MomentJS to the release of his new album.',
-                iconPath: 'img/projects/benTarr.png'
-            },
-            {
                 name: 'Archers Alumni',
                 skills: 'Wordpress, HTML, CSS',
                 url: 'http://archersalumni.com',
@@ -35,7 +35,7 @@ const content =  {
             },
             {
                 name: 'Execuwell/Excellwell',
-                skills: 'Javascript, jQuery, HTML, CSS',
+                skills: 'WordPress, HTML, CSS',
                 url: 'https://execuwell.com',
                 description: 'Designed, created, and maintain website for Indianapolis-area wellness consultancy, Execuwell.',
                 iconPath: 'img/projects/execuwell.png'
